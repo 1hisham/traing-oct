@@ -1,0 +1,153 @@
+
+body{
+    background-color:lightblue;
+}
+.wapper{
+    background-color: whitesmoke;
+    max-width: 1200px   ;
+    color: gray;
+    padding: 20px;
+    
+    margin: 0 auto;
+
+}
+.wapper::after{
+    content:"";
+    display: block;
+    clear: both;
+
+}
+/*
+img{
+    float: left;
+    margin: 19px;
+}
+
+div .blue{
+    background-color: blue;
+    float:right ;
+}
+div .red{
+    background-color: red;
+    float: right;
+}
+div .green{
+    background-color: green;
+    z-index:1;
+}
+
+.box{
+    height: 100px;
+    width: 300px;           
+}
+*/
+.service{
+    float: left;
+    width: 25%;
+    padding: 1%;
+    margin: 1%;
+    border: 2px solid skyblue;
+    height: 300px;
+    background-color: rgb(235, 234, 170);
+}
+
+.wapper .services{
+    text-align: center;
+ 
+}
+.content{
+    padding: 10px;
+    margin: 10px 1%;
+    border: 2px solid rgb(109, 106, 131);
+    margin-top: 10px;
+    clear: left;
+}
+.wapper::after{
+display:block;
+content:"";
+clear:both;
+    
+} 
+section , aside{
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(218, 213, 213);
+
+}
+.column::after{
+    display: block;
+    content: "";
+    clear: left;
+}
+.content p{
+column-count: 3;
+column-gap: 25px;
+column-rule: 2px gray solid;
+text-align: justify;
+}
+
+/* relative position
+.services :nth-child(1){
+    position: relative;
+    top: 10px;
+}
+.services :nth-child(2){
+    position: relative;
+    right: 14px;
+    background-color: aqua;
+
+}
+.services :nth-child(3){
+    bottom: 40px;
+    position: relative;
+}
+*/
+#banner{
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+    text-align: center;
+    z-index:0 ;
+    
+}
+#banner ::after{
+
+   width: 100vw;
+   height: 100vw;
+   background-color: rgba(0, 0, 0, 0.185);
+   z-index: 200;
+}
+#banner h2{
+    position: absolute;
+    width: 100%;
+    color: azure;
+    top: 30px;
+    margin: 0 auto;
+}
+nav{
+    background-color: blueviolet;
+    position: fixed;
+    top:0px;
+     left:0px;
+     width: 100%;
+     color: black;
+     z-index: 2;
+     
+}
+nav ul ::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav ul li{
+    display: inline-block;
+    width: 29%;
+    text-align: center;
+}
+.services{
+    max-height: 149px;
+    overflow: hid;
+}
