@@ -2,7 +2,6 @@
 body{
     font-family: Georgia;
     margin: 0;
-    padding: 0;
 }
 
 .wrapper{
@@ -186,7 +185,6 @@ h1 .logo{
     float: none;
     
 }
-
 /* h1.logo{
     float: none;
     margin: 40px auto 0;
@@ -225,7 +223,7 @@ footer{
 }
 
 /* Tablet view  */
-@media screen and (max-width:789px){
+@media screen and (max-width:768px){
     
     header nav{
         float: none;
@@ -270,7 +268,6 @@ footer{
         float: none;
         margin: 10px auto 0;
     }
-    
 }
 /* mobail view  */
 @media screen and (max-width:480px){
