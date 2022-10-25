@@ -1,0 +1,36 @@
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+
+}
+.flex-container{
+    display: flex;
+    background-color: rgb(167, 167, 167);
+    flex-wrap: wrap;
+    flex-flow:column;
+    justify-content: center;
+    height: 600px;
+    align-items: center ;
+
+}
+
+.box{
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.one{
+    background-color: red;
+
+}
+
+.two{
+    background-color: blue;
+}
+
+.three{
+    background-color: green;
+}
+
