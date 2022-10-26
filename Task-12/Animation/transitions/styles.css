@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    
+}
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background-color: pink;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 2s;
+   
+}
+/* .text{
+    transform: rotate(0deg);
+    transition: transform 2s; */
+
+/* } */
+.circle:hover {
+    transition: background 2s;
+    background-color: brown;
+}
+.circle:hover .text{
+    transform: rotate(360deg);
+    transition: transform 2s 2s ;
+}

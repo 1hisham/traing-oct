@@ -1,0 +1,130 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow:hidden ;
+    margin: 0;
+}
+
+.grass , .sky , .road{
+    position: relative;
+}
+
+.sky{
+    
+    height: 40%;
+    background-color: skyblue;
+}
+
+.grass{
+    height: 30%;
+    background-color: seagreen;
+}
+
+.road{
+    height: 30%;
+    background-color: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom:  10px solid gray;
+    width: 100%;
+}
+
+
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+
+}
+
+.mario{
+   position: absolute;
+    bottom:180px;
+    left: 0;
+    /* animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(.0, 0.77, 1, .28) ;
+    animation-name:  jump ;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease; */
+    animation: drive 3s both infinite linear,
+                jump 0.3s 1.2s infinite ease;
+}
+
+.luigi{
+    position: absolute;
+    bottom:100px;
+    left: 0px ;
+    animation-name: drive;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+.could{
+     position: absolute; 
+
+}
+.sky :nth-child(1){
+    width: 200px;
+    position: absolute; 
+    top: 150px;
+    left: -30px;
+    right: -10px;
+    opacity: 0.5;
+    /* animation: wind 50s linear infinite reverse;  */
+    animation-name: wind;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.sky :nth-child(2){
+    width: 300px; 
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    right: -10px;
+    animation-name: wind;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* width: 300px;
+    top:0;
+    left: -1000px;
+    animation-name: wind ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;  */
+    
+    /* animation: wind  2s linear infinite reverse ; */
+}
+/* KEY FRAMES */
+
+
+@keyframes drive{
+    from { transform: translateX(-150px)}
+    to {transform: translateX(1800px)}
+}
+
+@keyframes wind{ 
+    from { transform: translateX(-300px)}
+    to{ transform: translateX(1800px)} 
+    /* from{left: -300px}
+    to{left: 100%;} */
+} 
+
+@keyframes jump{
+    0%{ bottom: 180px}
+    50%{ bottom: 200px}
+    100%{bottom: 180px}
+
+}
