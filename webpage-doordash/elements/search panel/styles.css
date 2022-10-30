@@ -1,0 +1,105 @@
+.container{
+    width: 100%;
+    min-height: 25vh;
+    
+    background: rgb(185, 185, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar{
+    width: 500px;
+    max-width: 259px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 10px;
+
+}
+.searchbar input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    color: #494949;
+    width: 150px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.searchbar button {
+    background: transparent;
+    border: none;
+}
+form.searchbar {
+    margin-bottom: 0;
+    
+}
+.container-2{
+    width: 100%;
+    min-height: 25vh;
+    background: #494945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.location-bar{
+    display: flex;
+    width: 500px;
+    max-width: 259px;
+    background-color:aliceblue;
+    height: 45px;
+    border-radius: 5px 5px 0px 0px;
+}
+.location-bar button{
+    background: transparent;
+    border:none;
+}
+
+.location-bar input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.container-3{
+    width: 100%;
+    min-height: 25vh;
+    background: #494990;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-bar{
+    display: flex;
+    width: 500px;
+    max-width: 259px;
+    background-color:aliceblue;
+    height: 45px;
+    border-radius: 0px 0px 5px 5px;
+}
+.sign-bar button{
+    background: transparent;
+    border:none;
+}
+.sign-bar input{
+    border: none;
+    background-color: transparent;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    
+}
+.sign-bar ::placeholder{
+    color: #191919;
+}
