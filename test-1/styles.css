@@ -1,0 +1,152 @@
+
+
+                                       /* MAIN PAGE */
+/* nav bar */
+a{
+    text-decoration: none;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: end;
+    margin : 15px 0;
+    
+}
+
+nav a{
+    margin: 5px 5px;
+    font-size: 17px;
+
+}
+
+  .blog a{
+    color: #494949;
+}
+ .contact a {
+    color: #494949;
+}
+.email a {
+    color: #000;
+}
+.email a:hover {
+    color:#07691c;
+}
+
+  /* NAME  */
+
+.name{
+    display: flex;
+    font-size: 54px;
+    font-weight: 600px;
+    margin-top: 30px;
+    position: absolute;
+    left:-5%;
+    inline-size:20px;
+}
+ /* image */
+ .image{
+    display: flex;
+    justify-content: center;
+
+
+ }
+ .image img{
+    margin-top: 10%;
+    width: 250px;
+    height: 350px;
+    margin-top: 200px;
+}
+  /* contents */
+  .on-bgcolor {
+    background-color: #ffe8dc;
+    margin-left: 6%;position: relative;
+  }
+  .on-bgcolor .working span{
+    font-size: 18px;
+    color: #07691c;
+  }
+
+
+  .on-bgcolor .about{
+    display: flex;
+    justify-content: center;
+    
+
+  }
+
+  .on-bgcolor .post{
+    display: flex;
+    justify-content: center;
+  }
+  .on-bgcolor .posts li{
+    height: 40px;
+    list-style: none;
+  }
+  .on-bgcolor ul{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows: repeat(4,1fr);
+  align-items: center;
+  text-align: left;
+  padding-left: 19px;
+  }
+  
+  
+  .on-bgcolor .working-about{
+    display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+  text-align: left;
+  margin-left: 10%;
+  grid-gap: 35px;
+  margin-bottom: 50px;
+ 
+}
+
+   /* footer */
+footer .footer-items li{
+    list-style: none;
+    font-size: 16px;
+    margin:10px ;
+    
+}
+footer  .footer-items{
+
+    width: 100%;
+    margin: auto auto;
+} 
+footer .items {
+    column-count:2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 6px 0px;
+    justify-items: normal;
+    margin-left:30px ;
+}
+ footer .items li:last-child {
+    color: #494949;
+} 
+footer .copyright ul {
+    display: grid;
+    grid-row:repeat(2,1fr);
+    justify-content: center;
+    
+}
+footer .copyright li{
+    list-style: none;
+    font-size: 11px;
+   
+    color: #dadad8;
+}
+footer .copyright ul .copy {
+    width: 100%;
+}
+
+ 
+
