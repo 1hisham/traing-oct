@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* nav  */
+#main nav form{
+    display: flex;
+    justify-content: end;
+}
+
+   /* ELEMENTS */
+
+
+#main nav form .button2{
+
+background: white;
+border: none;
+padding: 10px 20px;
+border-radius: 25px ;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #494949;
+font-weight: 500 ;
+} 
+
+
+#main nav form .button1{
+    
+border: none;
+background: transparent;
+outline: none;
+padding: 10px 20px;
+border-radius: 25px ;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: white;
+font-weight: 500 ;
+}
+#main nav form .buttons{
+display: flex;
+justify-content: left;
+margin: 10px;
+}
+
+
+
+/* #main {
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
+    width: ;
+} */
+
+
+/* main page contents */
+
+.mainpage .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mainpage .logo #doordash-logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    width: 56px;
+    height:32px ;
+    
+}
+.mainpage .content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mainpage .content span{
+    color: white;
+    font-size: 29px;
+    margin: 0;
+    font-weight: 700;
+    display: block;
+    text-transform: none;
+    text-align: center;
+    max-width: 344px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* search bar */
+
+.searchbar{
+    width: 500px;
+    max-width: 259px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    padding: 9px 9px;
+
+}
+.searchbar input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    color: #494949;
+    width: 150px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.searchbar button {
+    background: transparent;
+    border: none;
+}
+form.searchbar {
+    margin-bottom: 0;
+    
+}
+.mainpage .search-panel{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.mainpage .signin{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+}
+
+/* main page positioning */
+
+#main .mainpage{
+    display: flex;
+    flex-flow: column;
+    
+}
+#main{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -245px;
+    width: 100%;
+    object-fit: cover;
+}
+        /* middle portion */
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    justify-content: center;
+    margin: 0 auto;
+}
+main .app-content{
+    display: flex;
+    text-align: center;
+    padding-right: 37px;
+    padding-top: 35px;
+    font-size: 16;
+    font-weight: 500;
+}
+main span.content{
+    margin-right: 25px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+
+main form button.app-button{
+display: flex;
+white-space: nowrap;
+background: #Eb1700;
+border: none;
+padding: 10px 20px;
+border-radius: 25px ;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: white;
+font-weight: 500 ;
+} 
+main .arrows .row-1{
+    display: flex;
+}
+main .arrows .row-2{
+    display: flex;
+    margin-left: 12px;
+}
+main .arrows{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 25;
+}
+main .arrows span{
+    font-size: 16px;
+    font-weight: 400;
+}
+main span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -.5px;
+}
+
+               /* container 3 */
+
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.smallarrow span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #Eb1700;
+}
+ .container-3 .set .smallarrow{
+    display: flex;
+
+}
+.container-3 .set .headings{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.on-1{
+    display: flex;
+    
+}
+ .on-2{
+    display: flex;
+    margin: 25px 0;
+}
+.on-3{
+    display: flex;
+}
+  
+.container-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 420px;
+    margin: 70px auto;
+    
+    
+}
+.set .image img{
+    width: 88px;
+    margin-right: 20px;
+
+    }
+.set .image-3 img{
+    margin-right: 20px;
+}
+
