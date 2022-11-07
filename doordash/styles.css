@@ -446,20 +446,26 @@ footer .social-media{
     display: flex;
     justify-content: center;
     margin:15px 0;
+    gap: 15px;
+    margin-right: 15px;
 }
 
 
-footer .trems{
+footer .terms ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin: 0 15px;
+    margin: 0 25px;
 }
-footer .trems span{
+footer .terms span{
     font-size: 12px;
-    margin: 0 15px
+    margin: 0 5px;
+}
+footer .terms li{
+    
+    /* margin: 0 15px; */
 }
 
 footer h2{
@@ -671,24 +677,27 @@ footer .mobile{
         display: flex;  
         gap: 150px;
      padding-bottom: 20px;
+     margin: 0 15px;
     }
 
     footer .help{
         display: flex;
         flex-direction: column;
     }
-    footer  .trems{
+    footer  .terms ul{
         display: flex;  
         flex-direction: row;
         gap: 15px;
-        height: 0px;
+
         
     }
     footer .social{
      display: flex;
      flex-direction: row-reverse;
      align-items: center;
-     justify-content: space-around;
+     justify-content: space-between;
+    padding: 13px 0;
+   
 
     }
     .mainpage .logo h2 {
@@ -779,9 +788,9 @@ footer .mobile{
     footer .end-footer {
         gap: 290px;
     }
-    footer .trems{
+    footer .terms ul{
         display: flex;
-        max-width: 500px;
+        max-width: 700px;
     }
   
 }
@@ -825,10 +834,14 @@ footer .mobile{
         justify-content: center;
         
     }
+    .container-4{
+        max-width: 1400px;
+        width: 100%;
+    }
     .smallarrow span {
         font-size: 16px;
     }
-    footer .trems{
+    footer .terms ul{
         display: flex;
 
     }
@@ -844,12 +857,65 @@ footer .mobile{
         max-width: 1150px;
 
     }
-    footer .trems span{
-        margin: 0 15px;
+    footer .terms span{
+        margin: 0 0;
         
+    }
+}
+
+
+
+@media screen and (min-width:1440px){
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    main .arrows {
+        gap: 65px;
+        
+    }
+    .set .image-3 img{
+        width: 154px;
+        height: 154px;
+    }
+    .container-4 .cont-image img{
+        width: 714px;
+        height: 512px;
+    }
+    .container-4 .at-1{
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: -25px;
+
+    }
+    .container-4 .at-2{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .container-4 .on-1{
+        margin-bottom: -100px;
+    }
+    .container-4{
+        margin: 0px;
+        max-width: 100%;
+    }
+    .container-3{
+        margin: 150px auto;
     }
 
 
-@me
-    
+    footer {
+        max-width: 100%;
+    }
+    footer .social{
+        max-width: 1200px;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
 }
