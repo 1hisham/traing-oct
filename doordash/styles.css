@@ -2,24 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
-    font-family: TTNorms-Bold;
+    font-family: font;
     src: url(/fonts/TTNorms-Bold.woff2);
     font-weight: 600;
-    font-style: normal;
+
 }
+
 @font-face {
     font-family: TTNorms-ExtraBold;
     src: url(/fonts/TTNorms-ExtraBold.woff2);
-    font-size:700 ;
+    font-size: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: TTNorms-Medium;
     src: url(/fonts/TTNorms-Medium.woff2);
     font-size: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: TTNorms-Regular;
     src: url(/fonts/TTNorms-Regular.woff2);
@@ -118,9 +122,9 @@ body {
     text-transform: none;
     text-align: center;
     max-width: 344px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
 }
-
 
 /* search bar */
 .location-bar {
@@ -130,7 +134,7 @@ body {
 .searchbar {
     width: 500px;
     max-width: 259px;
-    background-color: aliceblue;
+    background-color:  rgb(255, 255, 255);;
     display: flex;
     align-items: center;
     border-radius: 20px 20px 20px 20px;
@@ -192,6 +196,7 @@ form.searchbar {
     background-position: center center;
     width: 100%;
     object-fit: cover;
+    
 }
 
 /* middle portion */
@@ -245,6 +250,7 @@ main .arrows {
     display: flex;
     margin-top: 20px;
     padding-left: 25;
+    gap: 85px;
 }
 
 main .arrows span {
@@ -338,14 +344,15 @@ button .button2 {
     display: flex;
     justify-content: flex-end;
 
-    
+
 }
 
 .mini-container .of-2 {
     display: flex;
     justify-content: flex-start;
-    
+
 }
+
 /* .container-4 {
     position: relative;
     background-color: pink;
@@ -359,12 +366,13 @@ button .button2 {
 .container-4 .at-2{
     padding-top: 95%;
 } */
-.container-4 .at-1{
+.container-4 .at-1 {
     margin-bottom: -350px;
 }
-.container-4 .at-2{
+
+.container-4 .at-2 {
     padding-top: 400px;
-    background-color:#ffe8dc ;
+    background-color: #ffe8dc;
     padding-bottom: 1px;
 }
 
@@ -418,40 +426,46 @@ button .button2 {
 } *
 
 /* footer */
-footer{
+footer {
     background-color: rgb(25, 25, 25);
 }
-footer .google svg{
+
+footer .google svg {
     background: #494949;
     border-radius: 8px;
 }
-footer .google{
+
+footer .google {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-items: center;
     align-items: center;
 }
-footer .knowns{
+
+footer .knowns {
     text-align: center;
 }
-footer .helps{
+
+footer .helps {
     text-align: center;
 }
-footer .busines{
+
+footer .busines {
     text-align: center;
 
 }
-footer .social-media{
+
+footer .social-media {
     display: flex;
     justify-content: center;
-    margin:15px 0;
+    margin: 15px 0;
     gap: 15px;
     margin-right: 15px;
 }
 
 
-footer .terms ul{
+footer .terms ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -459,69 +473,79 @@ footer .terms ul{
     justify-content: center;
     margin: 0 25px;
 }
-footer .terms span{
+
+footer .terms span {
     font-size: 12px;
     margin: 0 5px;
 }
-footer .terms li{
-    
+
+footer .terms li {
+
     /* margin: 0 15px; */
 }
 
-footer h2{
+footer h2 {
     font-size: 16px;
     color: white;
     text-align: center;
     margin: 20px 0;
 
 }
-footer span{
+
+footer span {
     color: white;
     font-size: 14px;
     line-height: 30px;
 }
-footer li{
+
+footer li {
     list-style: none;
     cursor: pointer;
 }
-footer .footer-1 ul.set-a1{
+
+footer .footer-1 ul.set-a1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-footer .footer-1 ul.set-a2{
+
+footer .footer-1 ul.set-a2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-footer .footer-1 ul.set-a3{
+
+footer .footer-1 ul.set-a3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-footer .footer-2 ul.set-b1{
+
+footer .footer-2 ul.set-b1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 
 }
-footer .footer-2 ul.set-b2{
+
+footer .footer-2 ul.set-b2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 
 }
-footer .mobile{
+
+footer .mobile {
     display: flex;
-   justify-content: center;
-   gap:30px;
-   padding: 37px 0;
-   margin: 7px 20px;
+    justify-content: center;
+    gap: 30px;
+    padding: 37px 0;
+    margin: 7px 20px;
 }
 
 .mainpage .logo-2 {
@@ -533,7 +557,7 @@ footer .mobile{
     .mini-container .cont-image img {
         width: 442px;
     }
-    
+
     #main {
         background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800px,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
         height: 550px;
@@ -543,28 +567,33 @@ footer .mobile{
         background-position: center center;
         object-fit: cover;
     }
+
     .mainpage .logo-2 {
         display: none;
     }
-    .container-4 .at-1   {
+
+    .container-4 .at-1 {
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: -30px;
     }
-    .container-4 .at-2   {
+
+    .container-4 .at-2 {
         display: flex;
         flex-direction: row;
         padding-top: 97px;
         padding-bottom: 70px;
     }
+
     .container-4 .mini-container .at-2 {
         display: flex;
         margin-bottom: 70px;
     }
+
     .searchbar {
         width: 500px;
         max-width: 400px;
-        background-color: aliceblue;
+        background-color: white;
         display: flex;
         align-items: center;
         border-radius: 20px 20px 20px 20px;
@@ -633,88 +662,101 @@ footer .mobile{
         line-height: 40px;
 
     }
-    footer .citys{
+
+    footer .citys {
         display: flex;
         /* justify-content: flex-start;
         justify-content: space-between; */
         gap: 150px;
     }
-    .container-4 .on-1{
+
+    .container-4 .on-1 {
         padding: 0 116px 0 22px;
     }
-   
-    
+
+
     footer .mobile {
         display: flex;
         flex-direction: column;
-       
+
 
     }
-    footer .footer-1 h2{
+
+    footer .footer-1 h2 {
         display: flex;
         margin-bottom: 0px;
         display: block;
         text-align: left;
         margin-bottom: 5px;
     }
-    footer .footer-2 h2{
+
+    footer .footer-2 h2 {
         display: flex;
         margin-bottom: 0px;
         display: block;
         text-align: left;
         margin-bottom: 5px;
     }
-    footer .pizza{
+
+    footer .pizza {
         display: flex;
         justify-content: flex-start;
         gap: 170px;
     }
-    footer .knowns{
+
+    footer .knowns {
         display: flex;
         flex-direction: column;
-    }
-    footer .tabs{
-        display: flex;  
-        gap: 150px;
-     padding-bottom: 20px;
-     margin: 0 15px;
     }
 
-    footer .help{
+    footer .tabs {
+        display: flex;
+        gap: 150px;
+        padding-bottom: 20px;
+        margin: 0 15px;
+    }
+
+    footer .help {
         display: flex;
         flex-direction: column;
     }
-    footer  .terms ul{
-        display: flex;  
+
+    footer .terms ul {
+        display: flex;
         flex-direction: row;
         gap: 15px;
 
-        
-    }
-    footer .social{
-     display: flex;
-     flex-direction: row-reverse;
-     align-items: center;
-     justify-content: space-between;
-    padding: 13px 0;
-   
 
     }
+
+    footer .social {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 0;
+
+
+    }
+
     .mainpage .logo h2 {
         display: none;
     }
+
     footer li {
         text-align: left;
-    
+
     }
 
 }
+
 @media screen and (min-width:1024px) {
 
     #main {
         height: 580px;
 
     }
+
     .mainpage .logos {
         display: flex;
         justify-content: center;
@@ -722,8 +764,9 @@ footer .mobile{
         margin-bottom: 93px;
         margin-left: 22px;
     }
+
     .mainpage .logo-2 {
-        align-items:center;
+        align-items: center;
         color: white;
         display: flex;
         margin-top: 30px;
@@ -731,6 +774,7 @@ footer .mobile{
 
 
     }
+
     .mainpage .logo {
         width: 42px;
         height: 26px;
@@ -740,71 +784,84 @@ footer .mobile{
         display: flex;
 
     }
-    .searchbar .arrow svg{
+
+    .searchbar .arrow svg {
         background: red;
-    border-radius: 100%;
-    padding: 7 7;
-    color: white;
+        border-radius: 100%;
+        padding: 7 7;
+        color: white;
     }
-    .mainpage .content span{
-        
-            max-width: 800px;
-            font-size: 60px;
-            line-height: 70px;
-            letter-spacing: -0.04ch;
+
+    .mainpage .content span {
+
+        max-width: 800px;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -0.04ch;
     }
-    .container-4 .cont-image img{
+
+    .container-4 .cont-image img {
         width: 100%;
     }
-    footer .mobile{
+
+    footer .mobile {
         display: flex;
         flex-direction: row;
         gap: 75px;
         margin: 0px;
     }
+
     footer .pizza {
         gap: 50px;
     }
+
     footer li {
         text-align: left;
     }
-    footer{
+
+    footer {
         padding: 0 15px;
     }
-    footer .end-footer{
+
+    footer .end-footer {
         display: flex;
         flex-direction: row-reverse;
         gap: 290px;
         margin: 0px;
         justify-content: center;
     }
-    footer h2{
+
+    footer h2 {
         text-align: left;
     }
+
     footer .tabs {
-        
+
         gap: 75px;
     }
+
     footer .end-footer {
         gap: 290px;
     }
-    footer .terms ul{
+
+    footer .terms ul {
         display: flex;
         max-width: 700px;
     }
-  
+
 }
 
 
-@media screen and (min-width:1185px){
-    .container-3 .set{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    align-items: center;    
+@media screen and (min-width:1185px) {
+    .container-3 .set {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
 
     }
-    .container-3{
+
+    .container-3 {
         display: flex;
         flex-direction: row;
         gap: 100px;
@@ -813,109 +870,229 @@ footer .mobile{
         justify-content: center;
 
     }
-    .container-3 .on-2{
-        margin:0px;
+
+    .container-3 .on-2 {
+        margin: 0px;
         justify-content: center;
-        
-    }
-    .container-3 .on-2 h2{
-    width: 190px;
-    margin-left: 35px;
 
     }
-    .container-3 .headings{
+
+    .container-3 .on-2 h2 {
+        width: 190px;
+        margin-left: 35px;
+
+    }
+
+    .container-3 .headings {
         text-align: center;
     }
-    .set .image img{
+
+    .set .image img {
         width: 154px;
         height: 154px;
     }
-    .container-3 .set  .smallarrow{
+
+    .container-3 .set .smallarrow {
         justify-content: center;
-        
+
     }
-    .container-4{
+
+    .container-4 {
         max-width: 1400px;
         width: 100%;
     }
+
     .smallarrow span {
         font-size: 16px;
     }
-    footer .terms ul{
+
+    footer .terms ul {
         display: flex;
 
     }
-    footer .social{
+
+    footer .social {
         display: flex;
         flex-direction: row;
-      
+
     }
+
     footer .social-media {
         margin: 0px;
     }
-    footer{
+
+    footer {
         max-width: 1150px;
 
     }
-    footer .terms span{
+
+    footer .terms span {
         margin: 0 0;
-        
+
     }
 }
 
 
 
-@media screen and (min-width:1440px){
-    body{
+@media screen and (min-width:1440px) {
+    body {
         width: 100%;
         margin: 0px;
         padding: 0px;
+        font-family: font;
 
     }
+
     main .arrows {
         gap: 65px;
-        
+
     }
-    .set .image-3 img{
+
+    .set .image-3 img {
         width: 154px;
         height: 154px;
     }
-    .container-4 .cont-image img{
+
+    .container-4 .cont-image img {
         width: 714px;
         height: 512px;
     }
-    .container-4 .at-1{
+
+    .container-4 .at-1 {
         max-width: 1200px;
         margin: 0 auto;
         margin-bottom: -25px;
 
     }
-    .container-4 .at-2{
+
+    .container-4 .at-2 {
         width: 100%;
         margin: 0 auto;
         justify-content: center;
     }
-    .container-4 .on-1{
+
+    .container-4 .on-1 {
         margin-bottom: -100px;
     }
-    .container-4{
+
+    .container-4 {
         margin: 0px;
         max-width: 100%;
     }
-    .container-3{
+
+    .container-3 {
         margin: 150px auto;
+        padding-right: 32px;padding-right: 32px;padding-right: 32px;padding-right: 32px;padding-right: 32px;padding-right: 32px;padding-right: 32px;
     }
 
 
     footer {
         max-width: 100%;
     }
-    footer .social{
+
+    footer .social {
         max-width: 1200px;
         justify-content: center;
         flex-direction: row-reverse;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: space-between;
+       
     }
+    .mainpage .content span{
+        line-height: 77px;
+        font-size: 64px;
+    }
+    #main nav form .buttons{
+       
+        margin-right: 25px;
+        margin-top: 15px;
+
+    }
+    #main nav form .button2{
+        padding: 12px 16px;
+    }
+    #main nav form .button2{
+        font-size:16px;
+    }
+    .container-4 h2{
+        font-size: 40px;
+        text-transform: none;
+    
+        
+    }
+    .container-4 .on-1 h2{
+        padding-right: 125px;
+
+    }
+    .mini-container .sub-container span{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .container-4 .at-1 {
+   max-width: 1260px;
+
+    }
+    .container-4 .on-1{
+        max-width: max-content;
+        line-height: 50px;
+    }
+    .container-4 .on-1{
+        max-width: max-content;
+    }
+    .mini-container .sub-container {
+        padding-top: 50px;
+    }
+    .container-4 .on-2{
+        margin-left: 30px;
+        max-width: 423px;
+    }
+    .mainpage .logos{
+        margin-bottom: 86px;
+        margin-left: 9px;
+        line-height: 25px;
+    }
+    .mainpage .search-panel{
+        margin-top: 33px;
+    }
+    .mainpage .logo-2{
+        margin-top:15px;
+    }
+    .mainpage .logo{
+        margin-top: 25px;
+    }
+    footer span:hover{
+        cursor: pointer;
+        text-decoration: underline;
+
+    }
+    main span.content{
+      padding-left: 48px;
+      margin-right: 0px;
+      padding-right: 57px;
+      line-height: 22px;
+    }
+    main .arrows{
+        margin-left: 23px;
+        gap: 27px;
+    }
+    main .arrows span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* .set h3{
+        font-weight: 100;
+    } */
+    footer .terms{
+        padding-left: 75px;
+        
+    }
+
+
+
+
+   
+    
+
 
 }
