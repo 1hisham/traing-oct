@@ -1,0 +1,224 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: font;
+}
+@font-face {
+    font-family: font;
+    src: url(fonts/SegoeUI-Roman-VF_web.woff2);
+}    
+
+
+
+      /* mobail input */
+                                       
+
+
+
+.mobile{
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    width: 44px;
+    height: 44px;
+   
+    
+}
+.hamburger svg{
+    width: 20px;
+    height: 20px;
+}
+.mobile .first-two{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width:130px;
+
+}
+.mobile .second-two{
+    display: flex;
+    align-items: center;
+   
+  
+    
+}
+.mobile .search {
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+   
+.mobile .search img{
+   
+    width: 18px;
+    height: 18px;
+    
+} 
+.mobile .microsoft-logo{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.mobile .sigh-in{
+    padding: 20px;
+    font-size: 14px;
+    
+}
+.mobile .azure-nav{
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: 600;
+}   
+.tab{
+    display: none;
+}
+    /* tablet view */
+    @media screen and (min-width:768px){
+        .mobile{
+            display: none;
+        }
+        .tab {
+            display: block;
+        }
+        .tab .first-two{
+            display: flex;
+            align-items: center;
+        }
+        .tab li{
+            display: flex  ;
+            list-style: none;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 8px;
+        }
+        .tab .contents{
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding-left: 15px;
+        }
+        .tab .search{
+            display: inline-flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+        }
+        .tab .search img{
+            width: 16px;
+            height: 16px;
+            
+        }
+        .tab .dot{
+            width: 44px;
+            height: 54px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tab .dot svg{
+            width: 25px;
+            height: 25px;
+        }
+        .tab .last-three{
+            display: flex;
+            align-items: center;
+        }
+        .tab {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .tab .first-flex{
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+        }
+        .tab .azure-nav span{
+            font-size: 18px;
+            margin-left: 12px;
+            font-weight: bold
+        }
+        .tab .contents li span{
+            font-size: 13px;
+
+        }
+        .tab .contents li p{
+            margin-bottom: 21px;
+            
+        }
+        .tab .last-three span{
+            padding:20px 8px;
+        }
+        .laptop-nav {
+            display: none;
+        }
+         
+    }  
+    @media screen and (min-width:1087px){
+            .tab .last-three{
+                display: none;
+            }
+            .laptop-nav {
+                display: block;
+            }
+             
+            .laptop-nav  form img{
+                width: 15px;
+                height: 15px;
+            }    
+            .laptop-nav form input{
+                margin-right: -25px;
+                width: 120px;
+                height: 32px;
+                border-radius: 4px;
+                border: 1px solid;
+
+            }
+            .laptop-nav{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-right: 15px;
+                
+            }
+            .laptop-nav span{
+                font-size: 13px;
+            }
+            .laptop-nav button{
+                background-color:  #89c402;
+                border: 1px solid #6f9e02;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 8px 5px;
+                border-radius: 4px;
+                line-height: 1;
+                
+            }
+            .laptop-nav button span{
+                 font-size: 12px;
+            }
+            .laptop-nav .search-panal{
+                margin-top: 15px;
+            
+            }
+            .tab {
+                max-width: 1310px;
+                margin: auto auto;
+            }
+            .laptop-nav .learn{
+                margin-left: 25px;
+            
+            }
+
+        }
