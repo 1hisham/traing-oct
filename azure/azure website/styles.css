@@ -553,21 +553,230 @@ body {
     text-align: center;
     padding: 15px;
 
+
+}
+.container-4 .total span{
+    font-size: 12px;
+
+
 }
 
+.container-4 .total p{
+    font-size: 16px;
+    font-weight: 400px;
+}
+.container-4 .total .abouts{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-4 .total img{
+    max-width: 100%;
+    height: auto; 
+    border-radius: 6px 6px 0 0;
+    ;
+} 
+.container-4 .total{
+    border-radius: 6px;
+    display: flex;
+    width:215px;
+    flex-direction: column;
+    color: #4c4c51;
 
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    background-color: #fff;
+    border-radius: 6px; 
 
+}
+.container-4 .all {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    overflow: scroll;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+   padding: 67px 8px ;
 
+    
+ 
+}
+.container-4 .abouts{
+    padding: 12px;
+    display: flex;
+    flex-direction: column ;
+    flex-grow: 1;
+    gap:12px
+}
+.container-4 .game .game-image img{
+    max-width: 100%;
+    height: auto;
 
+}
+.container-4  button img{
+    width: 32px;
+    height: 32px;
+    fill: #0062ad;
+   
+}
+.container-4 .game-image{
+    position: relative;
 
+}
+.container-4 .game-image button {
+    position: absolute;
+    top:50%;
+    left:50%;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 25px;
+    border: 2px solid transparent;
+}
+.container-4 .game-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #242429;
+    font-weight: 400;
 
+}
+.container-4 .game-text {
+    padding: 24px;
+}
+.container-4 .game-text button{
+    color: #0062ad;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid #0062ad;
+    border-radius: 4px;
+}
+.container-5 .action button img{
+    width: 36px;
+    height: 36px;
+}
+.container-5 .action button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #f8f9fa;
+    gap:20px;
+    padding-left: 10px ;
+    border-radius: 6px;
+    border: 0;
+}
+.container-5 .action  .b1 {
+    background-color:  #243a5e;
 
+}
+.container-5 .action  .b2 {
+    background-color: #242429;
 
+}
 
+.container-5 .action  .b3 {
+    background-color: #0062ad;
 
+}
+.container-5 .action button h2{
+    display: flex;
+    max-width: 70%;
+    margin: 0;
+    padding: 24px;
+}
+.container-5 .action {
+    padding: 60px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-5 .social-logos svg{
+    width: 24px;
+    height: 24px;
+}
+.container-5 .social-logos button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaebec;
+    border:none;
 
+    border-radius: 4px;
+    font-size: 14px;
+}
+.container-5 .social-logos button span{
+    color: #4c4c51;
+    margin-left: 10px;
+    padding: 12px;
+}
+.container-5 .media-logos{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container-5 .social-logos{
+    display: flex ;
+    flex-wrap: wrap;
+    padding: 0 18px;
+}
+.container-5 .plus button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaebec;
+    border:none;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0 24px;
+    margin-top: 36px;
 
+    
+}
+.container-5 .plus span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.container-5 .plus {
+    padding: 50px 15px;
+}
+.container-5 .plus p {
+    font-size: 16px;
+}
+.container-5 .search-down span{
+    font-size: 12px;
+    color: #4c4c51;
+    margin-bottom: 5px;
+}
+.container-5 .search-down button{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* width: 188px 36px; */
+   background-color: #fff;
+   outline: none;
+   border: 1px solid black;
+}
+.container-5 .search-down{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.container-5 .search-down p{
+    margin: 5px;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+.container-5 .search-down span{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.container-5 .search-down button span{
+    font-size: 14px;
+    padding: 5px;
+    color: #1A1A1f;
+   
 
+}
 
 
 
