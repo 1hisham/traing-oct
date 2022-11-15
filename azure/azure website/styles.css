@@ -125,6 +125,8 @@ body {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.3;
+    margin-bottom: 8px;
+    margin-top: 80px;
 }
 
 .container-1 .sub-container .heading h1 {
@@ -132,6 +134,7 @@ body {
     font-size: 54px;
     font-weight: 600;
     line-height: 1.1;
+    margin-top: 0;
 }
 
 .container-1 .sub-container .paragraph-2 p {
@@ -505,6 +508,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
+    padding: 0;
+    padding-right: 25px;
+    margin-bottom: 15px;
 
 
 }
@@ -519,6 +525,8 @@ body {
 }
 .container-4 .migration {
     padding: 50px 50px;
+    background-color: #f8f9fa;
+
 
 }
 
@@ -537,7 +545,7 @@ body {
     text-align: center;
 }
 .container-4 .migration button{
-    border: 2px solid #0062ad;
+    border: 1px solid #0062ad;
     padding: 10px 16px ;
     border-radius: 6px;
     background: transparent;
@@ -611,11 +619,12 @@ body {
     height: auto;
 
 }
-.container-4  button img{
-    width: 32px;
-    height: 32px;
-    fill: #0062ad;
-   
+.container-4  button p{
+    font-size: 35px;
+    color: #0062ad;
+    margin: 0;
+    padding-left: 7px;
+
 }
 .container-4 .game-image{
     position: relative;
@@ -623,12 +632,13 @@ body {
 }
 .container-4 .game-image button {
     position: absolute;
-    top:50%;
-    left:50%;
+    top:35%;
+    left:35%;
     background-color: #fff;
-    border-radius: 100%;
-    padding: 25px;
+    border-radius: 80%;
     border: 2px solid transparent;
+    width: 60px;
+    height: 60px;
 }
 .container-4 .game-text p {
     font-size: 20px;
@@ -645,7 +655,7 @@ body {
     padding: 10px 16px;
     font-size: 14px;
     background-color: transparent;
-    border: 2px solid #0062ad;
+    border: 1px solid #0062ad;
     border-radius: 4px;
 }
 .container-5 .action button img{
@@ -762,13 +772,13 @@ body {
     max-width: 200px;
 }
 .container-5 .search-down p{
-    margin: 5px;
-    margin-bottom: 8px;
+    margin: 0px;
+    margin-bottom: 5px;
     font-size: 19px;
 }
 .container-5 .search-down span{
     margin-top: 0;
-    margin-bottom: 8px;
+  
 }
 .container-5 .search-down button span{
     font-size: 14px;
@@ -777,10 +787,27 @@ body {
    
 
 }
+footer .footer-flex ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    
+}
 
+footer .footer-flex ul li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
 
-
-
+    
+}
+footer .footer-flex ul li:last-child{
+    font-weight: bold;
+}
+footer .footer-flex{
+    padding:15px
+}
 
 
 
@@ -804,8 +831,17 @@ body {
 
 /* tablet view */
 @media screen and (min-width:768px) {
+    .container-3 .tab-c4 .ais{
+        display: none;
+    }
+    .container-4 .health-img .phone-img{
+        display: none;
+    }
     .container-2 .small-screen {
         display: none;
+    }
+    .container-3 .tab-c4{
+        padding: 20px;
     }
 
 
@@ -946,10 +982,20 @@ body {
     .grid-2 p {
         font-size: 16px;
         margin-bottom: 0;
+        line-height: 1.5;
+        margin: 15px;
+        margin-top: 5px;
+        color: #4c4c51;
+        margin-bottom: 25px;
     }
 
-    .grid-2 span {
-        padding: 0;
+    .grid-2  span {
+        padding-left: 13px;
+        padding-right: 15px;
+ 
+ 
+       
+       
     }
 
     .grid-2 .tfirst-card .text {
@@ -973,8 +1019,13 @@ body {
         display: flex;
         flex-direction: column;
         line-height: 1.5;
+        padding: 17px;
 
 
+    }
+
+    .grid-2 .tsecond-card .text {
+        padding: 10px;
     }
 
     .grid-2 .tsecond-card img {
@@ -1090,15 +1141,111 @@ body {
 
     .container-3 .tab-c4 {
         display: flex;
+        padding: 15px;
     }
     .container-4 .find {
         text-align: center;
         font-size: 24px;
     
     }
+    .container-3 .list ul{
+        width: 100%;
+        margin-right: 30px;
+    }
+    .container-4 .dots ul li{
+        padding-bottom: 80px;
+    }
+    .container-4 .migration .small-img {
+        display: flex;
+        width: 41%;
+    }
+    .container-4 .migration .text-heading{
+        display: flex;
+        flex-direction: column;
+        width: 59%;
+    }
+    .container-4 .migration{
+        display: flex;
+    }
+    .container-4 .migration button{
+        width: 49%;
+    }
+    .container-4 .migration .text-heading {
+        text-align: left;
+    }
+    .container-4 .all {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .container-4 .all .sc-3 img{
+        display: none;
+    
+    }
+    .container-4 .all .sc-3 span{
+        display: none;
+    }
+    .container-4 .all .sc-3 p{
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .container-4 .all .sc-5 img{
+        display: none;
+    }
+    .container-4 .all .sc-5 span{
+        display: none;
+    }
+    .container-4 .all .sc-5 p{
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .container-4 .all .sc-3{
+      
+        background-image: url(//azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/page/home/news/scott-g.webp);
+        background-position:  0 0;
+        background-position: 7% 61%;
+    }
     
 
-
+    .container-4 .all .sc-5{
+        background-image: url(//azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/page/home/news/azure-regions.png);
+    }
+    .container-4 .game-image button {
+        top:38%;
+        left:46%;
+        width: 70px;
+        height: 70px;
+    }
+    .container-5 .action button {
+        padding-right: 30px;
+        align-items: revert;
+        flex-direction: column;
+        padding: 25px;
+    
+    }
+    .container-5 .action button img{
+        width: 48px;
+        height: 48px;
+    }
+    .container-5 .action button h2{
+        padding: 0;
+        max-width: 72%;
+    }
+    .container-5 .action button p{
+        font-size: 16px;
+        text-align: initial;
+    }
+    .container-5 .plus {
+        padding: 0 15px;
+    }
+    .container-5 .bg-color{
+      background-color: #f4f5f6;
+      padding-top: 50px;
+    }
+    footer{
+        background-color: #f4f5f6;
+    }
 
 
 
@@ -1118,6 +1265,15 @@ body {
     }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
