@@ -582,6 +582,7 @@ body {
 .container-4 .total .abouts {
     display: flex;
     flex-direction: column;
+    justify-content: end;
 
 }
 
@@ -839,6 +840,7 @@ footer .footer-flex ul li {
     list-style: none;
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 8px;
 
 
 }
@@ -888,6 +890,18 @@ footer .footer-flex {
 
 footer {
     background-color: #f4f5f6;
+}
+.container-4 .associats{
+    display: none;
+}
+.container-4 .game-text-1{
+    display: none;
+}
+.container-5 .footer-items{
+    display: none;
+}
+footer .search-down-1{
+    display: none;
 }
 
 
@@ -1548,15 +1562,212 @@ footer {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         
+        
     }
     .container-4 .all .sc-3{
-        grid-column: 3/ span 4;
+    
+        grid-column: 3/ span 2;
+    
         background-image: url(//azurecomcdn.azureedge.net/cvt-cba17aff7d5806570da8eaf3c40c38a87d8a00cb3fa198a24735fb5814390a7f/images/page/home/news/scott-g.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    
     }
+    .container-4 .all .sc-5{
+    
+        
+        grid-column: 2/span 2;
+        background-image: url(//azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/page/home/news/azure-regions.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    
+    }
+
+
     .container-4 .total{
         width: auto;
     }
+    .container-4 .game{
+        position: relative;
+    }
+    .container-4 .game-text{
+        display: none;
+        
+    }
+    .container-4 .game .game-text-1 p{
+       
+            font-size: 20px;
+            line-height: 1.5;
+            color: #242429;
+            font-weight: 400;
+    }
+    .container-4 .game .game-text-1{
+        width: 49%;
+        padding: 24px;
+        max-width: 625px;
+        height: auto;
+        background-color: rgba(26,26,31,.94);
+        position: absolute;
+        top: 12%;
+        left: 2%;
+        border-radius: 6px;
 
+    }
+    .container-4 .game .game-text-1 p{
+        color: white;
+        margin: 0;
+        font-weight: 600;
+        font-size: 24px;
+
+    }
+    .container-4 .game .game-text-1 .playbutton-1{
+        display: flex;
+        align-items: center;
+        background-color: #0078d4;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 16px 12px 48px;
+        color: white;
+        border-radius: 6px;
+        
+
+
+    }
+    .container-4 .game .game-text-1 .playbutton-1 p{
+        color: #0078d4;
+ 
+    
+        border-radius: 50%;
+        background-color:  #50e6ff;
+        font-size: 5px;
+        width: 24px;
+        height: 24px;
+        font-size: 15px;
+    }
+    .container-4 .game .game-text-1 .playbutton{
+        display: flex;
+        
+
+    }.container-4 .game .game-text-1 .playbutton-2{
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        color: white;
+    }
+    .container-4 .game-image button{
+        display: none;
+    }
+    .container-4 .health-img img {
+        width: 100%;
+        object-fit: cover;
+
+        max-height: 700px; 
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1800px;
+     }
+     .container-5 .action {
+        flex-direction: row;
+     }
+     .container-5 .action button h2 {
+     max-width: 100%;
+     text-align: initial;
+     }
+     .container-5 .action button p {
+        line-height: 1.5;
+     }
+     .container-5 .plus{
+        display: none;
+     }
+     .container-5 .footer-items{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        margin-top: 30px;
+        padding: 15px;
+        gap: 24px;
+
+     }
+     .container-5 .footer-items ul li{
+        list-style: none;
+        font-size: 12px;
+       font-weight: 400;
+       color:#1a1a1f;
+       line-height: 1.5;
+       margin: 15px auto;
+    
+        
+    
+     }
+     .container-5 .footer-items ul span{
+        font-size: 14px;
+        font-weight: 700;
+     }
+     .container-5 .footer-items ul{
+        padding: 0;
+     }
+     .container-5 .search-down{
+        display: none;
+     }
+     footer .search-down-1 span {
+        font-size: 12px;
+        color: #4c4c51;
+        margin-bottom: 5px;
+    }
+    
+    footer .search-down-1 button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* width: 188px 36px; */
+        background-color: #fff;
+        outline: none;
+        border: 1px solid black;
+        height: 36px;
+    }
+    
+    footer .search-down-1 {
+        padding-left: 10px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        width: 180px;
+        
+    }
+    
+    footer .search-down-1 p {
+        margin: 0px;
+        margin-bottom: 5px;
+        font-size: 19px;
+    }
+    
+    footer .search-down-1 span {
+        margin-top: 0;
+    
+    }
+    
+    footer.search-down-1 button span {
+        font-size: 14px;
+        padding: 5px;
+        color: #1A1A1f;
+    
+    
+    }
+    footer .elements{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    }
+    footer .footer-flex{
+        max-width: 62%;
+    }
+    .container-4 .game-text-1{
+        display: block;
+    }
+     
 
    
 
@@ -1775,7 +1986,7 @@ footer {
 
     .container-1 .explore {
         background-color: #0078d4;
-        ;
+        
         padding: 12px 0;
         text-align: center;
         font-size: 14px;
