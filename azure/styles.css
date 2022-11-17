@@ -2052,4 +2052,15 @@ footer .search-down-1{
 
 
     }
+    .container-3{
+        max-width: 1310px;
+        margin: auto;
+        overflow: visible;
+    }
+    .color{
+        background-color: #f8f9fa;
+        width: 100%;
+        overflow: hidden;
+    }
+
 }
