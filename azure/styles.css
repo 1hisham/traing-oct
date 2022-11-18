@@ -5,6 +5,10 @@ body {
 
     font-family: font;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: font;
@@ -903,7 +907,13 @@ footer {
 footer .search-down-1{
     display: none;
 }
-
+.for-color{
+    background-color: #f8f9fa;
+}
+.container-1 .sub-sub{
+    max-width: 1310px;
+    margin: auto;
+}
 
 
 
@@ -1050,7 +1060,7 @@ footer .search-down-1{
     }
 
     .tab .contents li p {
-        margin-bottom: 21px;
+        margin-bottom: 5px;
 
     }
 
@@ -1263,8 +1273,10 @@ footer .search-down-1{
 
 
     .container-4 .migration .small-img {
-        display: flex;
+        display: block;
         width: 41%;
+        max-width: 480px;
+        max-height: 380px;
     }
 
     .container-4 .migration .text-heading {
@@ -1512,7 +1524,7 @@ footer .search-down-1{
         max-height: 700px; 
         margin-left: auto;
         margin-right: auto;
-        max-width: 1800px;
+      
         
     
     }
@@ -1522,6 +1534,7 @@ footer .search-down-1{
     
     .container-4 .health-img{
         position: relative;
+        width: 1920px;
     }
 
     .container-4 .content{
@@ -1554,9 +1567,12 @@ footer .search-down-1{
     }
     .container-4 .migration {
         max-height: 370px;
+        padding-left: 155px;
     }
     .container-4 .cloud-padding{
         padding-bottom: 65px;
+        display: flex;
+        justify-content: center;
     }
     .container-4 .all {
         display: grid;
@@ -1591,6 +1607,8 @@ footer .search-down-1{
     }
     .container-4 .game{
         position: relative;
+        max-width: 1920px;
+        margin: auto;
     }
     .container-4 .game-text{
         display: none;
@@ -1620,25 +1638,28 @@ footer .search-down-1{
         margin: 0;
         font-weight: 600;
         font-size: 24px;
+        margin-bottom: 17px;
+        margin-right:10px;
 
     }
     .container-4 .game .game-text-1 .playbutton-1{
         display: flex;
-        align-items: center;
+        align-items: end;
         background-color: #0078d4;
         border: none;
         font-size: 16px;
         font-weight: 600;
-        padding: 12px 16px 12px 48px;
+        padding: 12px 16px 12px 20px;
         color: white;
         border-radius: 6px;
+        
         
 
 
     }
     .container-4 .game .game-text-1 .playbutton-1 p{
         color: #0078d4;
- 
+        margin: 0;
     
         border-radius: 50%;
         background-color:  #50e6ff;
@@ -1646,9 +1667,11 @@ footer .search-down-1{
         width: 24px;
         height: 24px;
         font-size: 15px;
+        margin-right:10px;
     }
     .container-4 .game .game-text-1 .playbutton{
         display: flex;
+     
         
 
     }.container-4 .game .game-text-1 .playbutton-2{
@@ -1667,7 +1690,7 @@ footer .search-down-1{
         max-height: 700px; 
         margin-left: auto;
         margin-right: auto;
-        max-width: 1800px;
+       max-width: 1920px;
      }
      .container-5 .action {
         flex-direction: row;
@@ -1738,7 +1761,7 @@ footer .search-down-1{
         
     }
     
-    footer .search-down-1 p {
+    footer .search-down-1 p {   align-items: end;
         margin: 0px;
         margin-bottom: 5px;
         font-size: 19px;
@@ -1767,7 +1790,90 @@ footer .search-down-1{
     .container-4 .game-text-1{
         display: block;
     }
+    .container-4 .all .sc-3 p{
+        font-size: 24px;
+        padding: 25px;
+    }
+    .container-4 .all .sc-5 p{
+        font-size: 24px;
+        padding: 10px;
+    }
+    .center button{
+        width: 52%;
+        font-weight: 400;
+    }
+    nav span:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .container-1 .explore:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+    }
+    .container-1 .sub-container .buttons .get:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .container-1 .sub-container .buttons .try:hover{
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: .5s ;
      
+    }
+    .grid-2 .tfirst-card:hover span{
+        text-decoration: underline;
+        color: #0078d4;
+        cursor: pointer;
+        
+    }
+    .container-2 .ongrid:hover span{
+        text-decoration: underline;
+        color: #0062ad;
+       
+    }
+    .container-2 .ongrid:hover {
+        cursor: pointer;
+    }
+    .center button:hover{
+        background-color: #0062ad;
+        color: white;
+        text-decoration: underline;
+    }
+    .container-3 .list li:hover  {
+        text-decoration: underline;
+        cursor: pointer;
+
+    }
+    .container-3 .side-image:hover img{
+        transform: translateX(-15px);
+        transition: .5s;
+    }
+    .container-3 .side-image:hover button{
+        transform: translateX(-15px);
+        transition: .5s;
+
+    }
+    .container-4 .associats button:hover{
+        filter: grayscale(0);
+        
+    }
+    .container-4 .associats .ab-1{
+        border-bottom: 2px solid #0062ad;
+    }
+    footer li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+
+    }
+    .container-5 .footer-items   li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+
+    }
+   
 
    
 
@@ -1801,11 +1907,15 @@ footer .search-down-1{
         background: none;
     }
 
-    .laptop-view {
-        background: url(https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/page/home/december-hero-desktop.webp);
-        object-fit: cover;
+    .laptop-view .baner{
+        background-image: url(//azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/page/home/december-hero-desktop.webp);
+        background-position: 50% ;
         background-size: cover;
-        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 615px;
+        
+       
+   
     }
 
     .container-1 .sub-container {
@@ -1813,12 +1923,13 @@ footer .search-down-1{
         width: 45%;
         text-align: left;
         align-items: flex-start;
-        padding-top: 50px;
+
 
     }
 
     .container-1 .sub-container h1 {
         margin-top: 0px;
+        margin-bottom: 5px;
     }
 
     .container-1 .sub-container .buttons .get {
@@ -1875,6 +1986,7 @@ footer .search-down-1{
     .container-3 .side-image img{
         border: 25px solid black;
         border-radius: 6px;
+        max-height: 530px;
        
 
     }
@@ -1997,8 +2109,27 @@ footer .search-down-1{
         display: flex;
         width: 25%;
     }
-
-
+    .container-5 .action{
+        max-width: 1310px;
+        margin: auto;
+     
+    
+    }
+    .container-5 .width{
+        max-width: 1310px;
+        margin: auto;
+    }
+   
+    
+    footer{
+        max-width: 1310px;
+        margin: auto;
+    }
+    .container-4 .migration{
+        max-width: 1310px;
+        margin: auto;
+    }
+ 
 }
 
 
@@ -2019,9 +2150,9 @@ footer .search-down-1{
 
 @media screen and (min-width:1440px) {
     .container-1 .sub-container {
-        margin: 0 65px;
+     
         max-width: 1310px;
-        margin-left: 250px;
+     
         width: 85%;
     }
 
@@ -2062,5 +2193,48 @@ footer .search-down-1{
         width: 100%;
         overflow: hidden;
     }
-
+    .container-4 .all{
+        max-width: 1310px;
+        margin: auto;
+    }
+    .container-4 .action{
+        max-width: 1310px;
+        margin: auto;
+    }
+    .color-2{
+        background-color: #f4f5f6;
+    }
+    .laptop-view .baner{
+        height: 761px;
+    }
+    .container-4 .game .game-image img {
+        max-width: 1920px;
+        max-height: 720px;
+        height: 100%;
+        width: 100%;    
+        object-fit: cover;
+    }       
+    .container-4 .game .game-text-1{
+        left: 15%;
+        max-width: 700px;
+        width: 100%;
+    
+    }
+    .container-3 .tab-c4 .list{
+        margin-right: 40px;
+    }
+    .container-3 .side-image{
+        width: 20%;
+    }
+    .container-3 .cardo p{
+        margin: 25px 0;
+       
+    }
+    .container-3 .grid-cards{
+        column-gap: 30px;
+        row-gap: 28px;
+    }
+    .container-3 .cardo{
+    border-radius: 10px;
+    }
 }
