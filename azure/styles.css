@@ -42,6 +42,27 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+footer .fixed-item button{
+    border: 2px solid #0062ad   ;
+    padding: 15px 25px;
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    background-color: #0078d4;
+    border-radius: 6px;
+    
+}
+footer .fixed-item  span{
+    font-size: 18px;
+    font-weight: 350px;
+    color: white;
+}
+footer .fixed-item img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}   
+
 
 .hamburger {
     display: inline-flex;
@@ -1300,6 +1321,7 @@ footer .search-down-1{
 
     .container-4 .all {
         grid-template-columns: repeat(3, 1fr);
+        overflow: none;
     }
 
     .container-4 .all .sc-3 img {
@@ -1577,6 +1599,7 @@ footer .search-down-1{
     .container-4 .all {
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        overflow: none;
         
         
     }
@@ -2236,5 +2259,8 @@ footer .search-down-1{
     }
     .container-3 .cardo{
     border-radius: 10px;
+    }
+    .container-4 .all{
+        overflow: none;
     }
 }
