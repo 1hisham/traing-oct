@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: font;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: font;
+}
+@font-face {
+    font-family: font;
+    src: url(fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
+}
+@font-face {
+    font-family: font1;
+    src: url(fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: font2;
+    src: url(fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2);
+    font-weight: 600;
+}
+header .main-button{
+    padding-inline: 24px;
+ 
+}
+header .main-button button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 9px rgb(0 0 0 /14%);
+    border: none;
+    border-radius: 32px;
+    padding:8px 10px;
+    padding-bottom: 7px;
+    padding-top: 9px;
+    margin: auto;
+    width: 100%;
+    margin-top: 14px;
+    min-width: 285px;
+    max-height: 54px;
+
+    
+
+  
+
+}
+header .main-button .where .any {
+    display: flex;
+  
+}
+
+header .main-button .where .to{
+    display: flex;
+    flex-direction: column;
+   text-align: left ;
+
+}
+header .main-button .where .to span{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+    line-height: 20px;
+
+   
+}
+header .main-button .where .any span{
+    font-size: 12px;
+    color: #717171;
+    line-height: 16px;
+    font-family: font1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 50px;    
+   
+
+}
+header .main-button .where .any p{
+    margin-inline: 5px;
+    color: #717171;
+
+    font-weight: 300px;
+}
+header .main-button .left-items{
+    display: flex;
+}
+header .main-button button svg{
+    padding: 9px;
+}
+header .main-button button .search-new  svg{
+    border: 1px solid #DDDDDD;
+   
+    border-radius: 32px;
+    padding-right: 9px;
+}
+header .main-button button .search-svg svg{
+    padding-left: 12px;
+    padding-top: 11px;
+    padding-right: 18px;
+}
+@media screen and (min-width:744px){
+    header{
+        display: none;
+    }
+    .tab .container-1 .main-part{
+        display: flex;
+        align-items: center;
+        height: 48px;
+    }
+    .tab .container-1 .sub-container button{
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        padding: 0 16px;
+        /* height: 48px; */
+    }
+    .tab .container-1 .sub-container .red-search {
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        background-color: #ff3856;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab .container-1 .sub-container {
+        min-width: 348px;
+        box-shadow: 0px 2px 9px rgb(0 0 0 /14%);
+
+        width: fit-content;
+        margin: auto;
+        border-radius: 35px;
+       
+
+
+
+    }
+    .tab .container-1 .sub-container .mb-2{
+        border-left: 1px solid #b0b0b0;
+        border-right: 1px solid #b0b0b0;
+    }
+    
+}
