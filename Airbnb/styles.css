@@ -102,6 +102,297 @@ header .main-button button .search-svg svg{
     padding-top: 11px;
     padding-right: 18px;
 }
+.container-2 .element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.container-2 .scroll{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow: scroll;
+    gap: 30px;
+    padding-top: 10px;
+    padding-inline: 24px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #b0b0b0; */
+    box-shadow: 0px 2px 9px rgb(0 0 0 /14%);
+}
+.container-2 .element .description span{
+    white-space: nowrap;
+    font-size: 12px;
+    color: #717171;
+
+
+}
+.container-2 .element .svgs img{
+    opacity: 0.7;
+}
+.container-2 .scroll .key span{
+    color: #222222;
+    padding-bottom: 8px;
+    border-bottom:2px solid #222222;
+
+}
+.container-2 .scroll .key  img{
+    opacity: 1;
+}
+.container-3 .image-container .on-image .sv{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-3 .room-img img{
+ 
+    width: 143%;
+    height: 100%;
+    border-radius: 15px;
+    transform: translateX(-70px);
+}
+.container-3 .image-container{
+    position: relative;
+}
+.container-3 .on-image svg{
+    position: absolute;
+    top: 2%;
+    right: 2%
+}
+.container-3 .room-about .location .rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+.container-3 .room-about .location {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.container-3 .room-about .time-added{
+    font-family: font1;
+    color: #717171;
+    font-size: 15px;
+}
+.container-3 .room-about .date{
+    font-family: font1;
+    color: #717171;
+    font-size: 15px;
+}
+.container-3 .room-about .rate{
+    display: flex;
+    font-size: 15px;
+}
+.container-3 .room-about  .night{
+    font-family: font1;
+}
+.container-3 .room-about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+.container-3 .card{
+    display: flex;
+    flex-direction: column;
+   
+    padding-inline: 24px;
+    padding-top: 15px;
+}
+.container-3 .room-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+   
+}
+.container-3 .on-image .dot{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    display: flex;
+    gap: 5px;
+}
+.container-3 .on-image .dot-1{
+    font-size: 40px;
+    color: white;
+}
+.container-3 .on-image .dot-2{
+    font-size: 40px;
+    color: white;
+    opacity: 0.7;
+}
+.container-3 .on-image .dot-3{
+    font-size: 40px;
+    color: white;
+    opacity: 0.5;
+}
+.container-3 .on-image .dot-4{
+    font-size: 40px;
+    color: white;
+    opacity: 0.3;
+}
+.container-3 .on-image .dot-5{
+    font-size: 40px;
+    color: white;
+    opacity: 0.2;
+}
+.fixed{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+    padding-top: 10px;
+}
+.container-3{
+    padding-bottom: 30px;
+    border: 1px solid #DDDDDD;
+}
+.footer-1 .show-button h3{
+    font-size: 18px;
+    margin-top: 56px;
+    font-family: font1;
+    display: flex;
+    justify-content: center;
+}
+.footer-1 .show-button span{
+    font-size: 16px;
+    font-family: font1;
+  
+}
+.footer-1 .show-button button{
+    padding: 13px 23px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #222222;
+    margin-top: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    
+}
+.footer-2 h2{
+    font-size: 22px;
+    font-family:font1;
+}
+.footer-1 .show-button{
+    padding-inline: 24px;
+}
+.footer-2 .sub-section{
+    display: flex;
+    border-bottom: 2px solid #DDDDDD;
+}
+.footer-2 .sub-section span{
+    padding: 10px;
+}
+footer .footer-2{
+    padding-inline: 24px;
+    margin-top: 80px;
+}
+.footer-2 .sub-section .categories{
+    padding-left: 0;
+    border-bottom: 1px solid #222222;
+}
+.footer-2 .sub-section .things{
+    color: #717171;
+}
+.footer-2 .footer-grid .catagory li{
+    font-size: 14px;
+    list-style: none;
+    padding-top: 28px;
+    font-family: font1;
+    color: #222222;
+
+}
+.footer-2 .footer-grid .catagory  {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.footer-2 .footer-grid .catagory li:last-child{
+    text-decoration: underline;
+    font-family: font;
+}
+.footer-2 .footer-grid {
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-2 .filter-button{
+    display: none;
+}
+
+
+.container-1{
+    display: none;
+}
+
+
+
+@media screen and (min-width:550px){
+    .container-3 .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        padding-inline: 24px;
+        margin-top: 20px;
+    }
+    .container-3 .card{
+        padding: 0;
+    }
+    
+}
+
+
+
+
+
 @media screen and (min-width:744px){
     header{
         display: none;
@@ -132,7 +423,8 @@ header .main-button button .search-svg svg{
         box-shadow: 0px 2px 9px rgb(0 0 0 /14%);
 
         width: fit-content;
-        margin: auto;
+        margin-left: 10px;
+        margin-right: auto;
         border-radius: 35px;
        
 
@@ -143,5 +435,171 @@ header .main-button button .search-svg svg{
         border-left: 1px solid #b0b0b0;
         border-right: 1px solid #b0b0b0;
     }
+    .tab .container-1 .sub-container .abcd .b3 span{
+        font-family: font1;
+        color: #717171;
+    }
+    .container-1 .home{
+        display: flex;
+        align-items: center;
+        height: 42px;
+        
+    }
+    .container-1 .home span{
+        font-size: 14px;
+        color: #222222;
+        /* height: 42px;
+        width: 150px; */
+        margin-right: 5px;
+    }
+    .container-1 .home svg{
+        padding: 12px;
+        /* filter: grayscale(1); */
+    }
+    .container-1 .log-in button{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        padding: 5px 5px 5px 12px;
+        border-radius: 30px;
+
+
+         margin:auto;
+         border: 1px solid #DDDDDD;
+   
+
+    }
+    .container-1 .log-in .login-svg-2 {
+        width: 30px;
+        height: 30px;
+        filter: grayscale(0);
+        margin-left: 10px;
+    }
+    .container-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    .container-1 .first-half{
+        display: flex;
+        max-height: 48px;
+    }
+    .container-1 .second-half{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    .container-1 .airbnb-logo{
+        padding-top: 9px;
+    }
+    .tab{
+        padding: 0 40px;
+        height: 80px;
+        
+        border-bottom: 1px solid #DDDDDD;
+      
+    }
+    .container-1 .first-two{
+        display: flex;
+        gap: 10px;
+    }
+    .container-2 .filter-button{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+     }
+     .container-2 .filter-button .arrow-filter{
+         padding: 8px;
+         border-radius: 50%;
+         background-color: white;
+         border: 1px solid #DDDDDD;
+         height: 30px;
+     }
+     .container-2 .filter-button .squre-button{
+         display: flex;
+         padding: 10px;
+         gap: 10px;
+         border-radius: 10px;
+         background-color: white;
+         border: 1px solid #DDDDDD;
+     
+     }
+     .container-2{
+         display: flex;
+         padding-inline: 40px;
+     }
+     .container-2 .scroll{
+        box-shadow: none;
+        padding-inline: 0;
+        gap: 50px;
+     }
+     .container-1 .airbnb-logo .laptop-logo{
+        display: none;
+
+     }
+     .container-3 .grid-container{
+        padding-inline: 40px;
+   
+}
+}
+
+@media screen and (min-width:950px){
+    .container-1 .sub-container{
+        display: block;
+        margin: auto;
+    }
+    .container-3 .grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1128px) {
+    .container-1 .airbnb-logo  .tab-logo{
+        display: none;
+    }
+    .container-1 .airbnb-logo .laptop-logo{
+        display: block;
+
+     }
+     .container-3 .grid-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    
+}
+
+
+@media screen and (min-width:1440px){
+    .container-2 .scroll{
+        overflow: hidden;
+}
+}
+@media screen and (min-width:1650px) {
+    .container-3 .grid-container{
+        grid-template-columns: repeat(5,1fr);
+
+        padding-inline: 80px;
+    }
+    .container-2{
+        padding-inline: 80px;
+    }
+    .tab{
+        padding-inline: 80px;
+    }
+    .container-2 .scroll{
+        gap: 55px;
+    }
+
     
 }
