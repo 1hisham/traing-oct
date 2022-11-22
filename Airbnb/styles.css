@@ -39,7 +39,7 @@ header .main-button button {
     padding-top: 9px;
     margin: auto;
     width: 100%;
-    margin-top: 14px;
+    margin-top: 7px;
     min-width: 285px;
     max-height: 54px;
 
@@ -168,8 +168,8 @@ header .main-button button .search-svg svg{
 }
 .container-3 .on-image svg{
     position: absolute;
-    top: 2%;
-    right: 2%
+    top: 6%;
+    right: 6%
 }
 .container-3 .room-about .location .rating{
     display: flex;
@@ -198,6 +198,7 @@ header .main-button button .search-svg svg{
 }
 .container-3 .room-about  .night{
     font-family: font1;
+    margin-left: 5px;
 }
 .container-3 .room-about{
     display: flex;
@@ -322,6 +323,8 @@ footer .footer-2{
 .footer-2 .footer-grid .catagory  {
     padding-top: 10px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .footer-2 .footer-grid .catagory li:last-child{
     text-decoration: underline;
@@ -330,6 +333,147 @@ footer .footer-2{
 .footer-2 .footer-grid {
     padding-bottom: 40px;
 }
+footer .footer-3 .full-footer{ 
+    padding-inline: 24px;
+    background-color: rgb(247, 247, 247);
+    padding-top: 25px;
+    border-top  : 1px solid #DDDDDD;
+}
+footer .footer-3 {
+    background-color: rgb(247, 247, 247);
+}
+footer .footer-3 li{
+    list-style: none;
+    display: flex;
+}
+.footer-3 .section .elements {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-3 li{
+    font-size: 14px;
+    list-style: none;
+    padding-top: 15px;
+    font-family: font1;
+    color: #222222;
+
+}
+footer .footer-3 span{
+    font-size: 14px;
+}
+.footer-3 .section{
+    padding-bottom: 18px;
+    padding-top: 18px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.footer-4 .social-logos{
+    display: none;
+}
+.footer-4 .world{
+    display: flex;
+    gap: 4px;
+}
+.footer-4 .second-part {
+    display: flex;
+    gap: 15px;
+
+}
+
+.footer-4 .second-part span{
+    font-size: 14px;
+    font-family:font;
+}
+.footer-4 .first-part li{
+    font-size: 14px;
+    font-family: font1;
+    color: #222222;
+    white-space: nowrap;
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    
+}
+.footer-4 .first-part li:first-child{
+    /* margin-left: 0;
+    margin-right: 100%;
+    margin-bottom: 0; */
+    display: flex; 
+    width: 100%;
+}
+.footer-4 .first-part li span:first-child{
+    font-family: font1;
+}
+.footer-4 .first-part li:last-child{
+    /* display: block; */
+}
+
+footer .footer-4 .full-footer{
+    display:flex ;
+    flex-direction: column-reverse;
+    padding-inline: 24px;
+    background-color: rgb(247, 247, 247);
+}
+.footer-4 .first-part .items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+
+}
+.footer-4 .all-contents{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer-6 .footer-end{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.footer-4 .bg-color{
+    background-color: rgb(247, 247, 247);
+}
+ .footer-6 .footer-end .nav-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+.footer-6 .footer-end  span{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.footer-6{
+    padding-top: 10px;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+.fixed-button .tab-button{
+    display: none;
+}
+.fixed-button button{
+    display: flex;
+    gap: 15px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #222222;
+    border-radius: 30px;
+    border: none;
+
+}
+.fixed-button{
+    position: fixed;
+    bottom: 100px;
+    right: 37%;
+}
 
 
 
@@ -339,13 +483,19 @@ footer .footer-2{
 
 
 
+@media screen and (min-width:375px) {
+    .footer-2 .footer-grid .catagory {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+ 
+    }
 
 
 
 
-
-
-
+    
+}
 
 
 
@@ -385,6 +535,11 @@ footer .footer-2{
     }
     .container-3 .card{
         padding: 0;
+    }
+    .fixed-button{
+        position: fixed;
+        bottom: 90px;
+        right: 45%;
     }
     
 }
@@ -426,9 +581,6 @@ footer .footer-2{
         margin-left: 10px;
         margin-right: auto;
         border-radius: 35px;
-       
-
-
 
     }
     .tab .container-1 .sub-container .mb-2{
@@ -542,9 +694,61 @@ footer .footer-2{
      .container-3 .grid-container{
         padding-inline: 40px;
    
-}
-}
+    }
+    .footer-2 .footer-grid .catagory {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .footer-3 .section .elements {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .footer-3 .section .on-2{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
 
+    }
+    .footer-4 .social-logos{
+        display: flex;
+        gap: 30px;
+        margin-left: 10px;
+    }
+    .footer-4 .second-part{
+        justify-content: center;
+     
+    }
+    .footer-4 .first-part .items{
+        justify-content: center;
+    }
+    .footer-4 .first-part li:first-child{
+        font-family: font1;
+        justify-content: center;
+        
+    }
+   
+
+    .tab .login-svg-2 svg{
+        opacity: 0.5;
+    }
+    .fixed-button .tab-button{
+        display: block;
+    }
+    .fixed-button .mobile-button{
+        display: none;
+    }
+    .fixed-button{
+        position: fixed;
+        bottom: 50px;
+        right: 44%;
+    }
+    .fixed-button button{
+        padding: 15px 15px;
+    }
+     .footer-6 .footer-end{
+        display: none;
+    }
+}
 @media screen and (min-width:950px){
     .container-1 .sub-container{
         display: block;
@@ -552,6 +756,11 @@ footer .footer-2{
     }
     .container-3 .grid-container{
         grid-template-columns: repeat(3,1fr);
+    }
+    .fixed-button{
+        position: fixed;
+        bottom: 50px;
+        right: 45%;
     }
 
     
@@ -575,7 +784,59 @@ footer .footer-2{
      .container-3 .grid-container{
         grid-template-columns: repeat(4,1fr);
     }
+    .footer-2 .footer-grid .catagory {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    footer .footer-3 .full-footer {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
 
+        max-width: 1440px;
+        margin: auto;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .footer-3 .section .elements {
+        display: inline;
+      
+    }
+    .footer-4 .first-part li:first-child{
+        display: block;
+        width: 130px;
+    }
+    .footer-4 .first-part li span:first-child{
+        display: block;
+    }
+    .footer-4 .first-part .items {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-4 .all-contents{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .footer-4 {
+        background-color: rgb(247, 247, 247);
+     
+    }
+    footer .footer-2{
+        padding-inline: 40px;
+    }
+    footer .footer-3{
+        padding-inline: 80px;
+    }
+    footer .bg-color{
+        padding-inline: 80px;
+    }
+    .fixed{
+        padding-top: 0;
+    }
+    .container-1 .airbnb-logo{
+        padding-top: 0;
+    }
     
 }
 
@@ -584,6 +845,9 @@ footer .footer-2{
     .container-2 .scroll{
         overflow: hidden;
 }
+    footer .footer-4{
+        padding-inline: 80px;
+    }
 }
 @media screen and (min-width:1650px) {
     .container-3 .grid-container{
@@ -600,6 +864,21 @@ footer .footer-2{
     .container-2 .scroll{
         gap: 55px;
     }
+    footer .footer-2{
+        padding-inline: 80px;
+    }
+    footer .footer-3 .full-footer{
+        padding-inline: 80px;
 
+    }
+    footer  .footer-4 .bg-color{
+        max-width: 1440px;
+        margin: auto;
+    }
+    footer .footer-4 {
+        background-color: rgb(247, 247, 247);
+     
+    }
+    
     
 }
