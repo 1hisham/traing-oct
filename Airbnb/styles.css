@@ -587,7 +587,7 @@ footer .footer-4 .full-footer{
         border-left: 1px solid #b0b0b0;
         border-right: 1px solid #b0b0b0;
     }
-    .tab .container-1 .sub-container .abcd .b3 span{
+    .tab .container-1 .sub-container  .b3 span{
         font-family: font1;
         color: #717171;
     }
@@ -878,6 +878,15 @@ footer .footer-4 .full-footer{
     footer .footer-4 {
         background-color: rgb(247, 247, 247);
      
+    }
+    .container-3 .room-about .time-added{
+        font-size: 17px;
+    }
+    .container-3 .room-about .date{
+        font-size: 17px;
+    }
+    .container-3 .room-about .location{
+        font-size: 16px;
     }
     
     
