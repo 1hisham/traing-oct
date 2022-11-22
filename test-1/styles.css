@@ -1,0 +1,190 @@
+
+                                       /* MAIN PAGE */
+/* nav bar */
+body{
+    margin: 5px 5px;
+    padding: 5px 1px;
+}
+a{
+    text-decoration: none;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: end;
+    margin : 15px 0;
+    gap: 10px;
+    
+}
+
+nav a{
+    margin: 5px 5px;
+    font-size: 17px;
+
+}
+
+  .blog a{
+    color: #494949;
+}
+ .contact a {
+    color: #494949;
+}
+.email a {
+    color: #000;
+}
+.email a:hover {
+    color:#07691c;
+}
+
+  /* NAME  */
+
+.name{
+    display: flex;
+    font-size: 54px;
+    font-weight: 600px;
+    margin-top: 30px;
+    position: absolute;
+    inline-size:20px;
+    margin-left: -10px;
+}
+ /* image */
+ .image{
+    display: flex;
+    margin: 15px;
+    
+
+
+ }
+ .image img{
+    margin-top: 10%;
+    width: 250px;
+    height: 350px;
+    margin-top: 200px;
+}
+  /* contents */
+  .container{
+    background-color: #ffe8dc;
+    margin-left: 6%;
+    position: relative;
+
+  }
+  .container .working span{
+    font-size: 18px;
+    color: #07691c;
+  }
+ .container .recent{
+    font-size: 18px;
+ }
+    
+
+  
+
+  .container .post{
+    display: flex;
+    justify-content: center;
+  }
+  .container .posts li{
+    height: 40px;
+    list-style: none;
+  }
+  .container ul{
+  display: grid;
+  text-align: center;
+  grid-template-rows: repeat(4,1fr);
+  align-items: center;
+  text-align: left;
+  padding-left: 19px;
+  }
+  
+  
+  .container .working-about{
+    display: grid;
+  margin-left: 10px;
+  text-align: center;
+  grid-template-rows: repeat(2,1fr);
+  align-items: center;
+  text-align: left;
+  grid-gap: 35px;
+  margin-bottom: 50px;
+ 
+}
+
+   /* footer */
+footer .items li{
+    list-style: none;
+    font-size: 16px;
+    margin:10px ;
+    
+
+} 
+footer .items {
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center; 
+    max-width: 350px;
+
+}
+ footer .items li:last-child {
+    color: #494949;
+} 
+footer .copyright ul {
+    display: grid;
+    grid-row:repeat(2,1fr);
+    justify-content: center;
+    
+}
+footer .copyright li{
+    list-style: none;
+    font-size: 11px;
+   
+    color: #dadad8;
+}
+
+
+ 
+@media screen and (min-width:766px){
+ nav .email a{
+    margin-right:250px ;
+ }
+
+ .container{
+    background-color: #ffe8dc;
+    margin-left: 20%;
+    position: relative;
+    
+
+  }
+  footer .items {
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center; 
+   max-width: 350px;
+   padding-left: 35%;
+  }
+  footer .copyright ul {
+    display: flex;
+    gap: 35px;
+
+  }
+  .container .working span{
+    font-size: 18px;
+    color: #07691c;   
+    display: flex;
+    rotate: 90deg;
+    margin: -276px;
+    width: 1102px;
+    justify-content: space-evenly;
+    
+}
+ .container .working-about .about span{
+       
+    display: flex;
+    justify-content: center;
+    margin: -51px;
+    margin-left: -160px;
+}
+ }
+
+  
