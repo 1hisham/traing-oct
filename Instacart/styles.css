@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: font;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:font ;
+    src: url(fonts/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2);
+}
+@font-face {
+    font-family: font1;
+    src: url(fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2);
+}
+@font-face {
+    font-family:font2 ;
+    src: url(fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2);
+}
+
+
+/* -----------------
+=================
+MOBILE HEADER
+=================
+----------------- */
+header{
+    background-color: #D43684;
+}
+
+header .top-items{
+    display: flex;
+    align-items: center;
+    
+}
+
+header .top-text{
+    margin-inline: 8px;
+}
+
+.top-items .top-img img{
+    display: flex;
+    margin-left: 8px;
+}
+
+.top-text span{
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff5fa;
+    
+}
+
+.top-text .delivery , .top-text .place{
+    font-family: font1;
+}
+
+.top-text a{
+    color: #fff5fa;
+
+    
+}
+
+/* ********NAV SECTION*********** */
+
+nav .hamburgor-button-svg{
+    padding: 1px 6px;
+}
+
+.nav-buttons .first-button{
+    font-size: 15px;
+    font-family: font1;
+    padding: 1px 6px;
+    margin-right: 11px;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-buttons .second-button{
+    font-size: 15px;
+    font-family: font1;
+    padding: 8px 16px;
+    background-color: #0AAD0A;
+    line-height: 22px;
+    border: none;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.instacart-logo{
+    display: flex;
+    padding-bottom: 4px;
+    
+}
+
+.nav-buttons{
+    display: flex;
+}
+
+.total-nav-for-flex{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* -----------------
+=================
+DISPLAY NONE
+=================
+----------------- */
+
+.tab-view{
+    display: none;
+}
+
+
+
+/* -----------------
+=================
+media==460px
+=================
+----------------- */
+
+@media screen and (min-width:460px){
+
+header .top-items{
+    height: 36px;
+    justify-content: center;
+}
+
+
+}
+
+/* -----------------
+=================
+media==768px
+=================
+----------------- */
+
+@media screen and (min-width:768px){
+
+.top-text span{
+    font-size: 18px;
+}
+
+header .top-items{
+    height: 56px;
+}
+
+.top-items .top-img img{
+    width: 36px;
+    height: 36px;
+    margin: 0;
+}
+}
+
+
+
+
+
+
+
+
