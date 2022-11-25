@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkgray ;
+}
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    height: 68px;
+    padding-top: 20px;
+    
+
+
+  
+}
+.container {
+    width: 80%;
+    margin: auto;
+    
+}
+.image{
+    float: left;
+}
+.items{
+    float: right;
+    position: relative;
+}
+
+.items a{
+    text-decoration: none;    
+    display: inline-block;  
+    color: #2f2f2f;
+    margin-inline: 25px;
+    padding-top:25px;
+    
+    
+
+}
+
+.items a::before{
+    content: '';
+    display: block;     
+    background-color: #2f2f2f;
+    width: 0px;
+    height: 2px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    transition-duration: 1000ms;
+   
+
+  
+
+    
+}
+
+.items a:hover::before{
+    transform: translateY(-15px);
+    transform:scale(1 ,0);
+    transform-origin: left;
+    isolation: initial;
+  
+    
+    
+
+}

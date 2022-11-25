@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    margin: 250px;
+    padding: 250px;
+}
+.container{
+
+}
+ul{
+    color: black;
+    display: none;
+}
+.buttons:hover{
+    cursor: pointer;
+
+}
+/* .buttons:active ul{
+    display: block;
+
+} */
+/* 
+.drop{
+    position: absolute;
+}
+.buttons{
+    position: relative;
+} */
+
+.buttons:hover .drop{
+    display: block;
+    padding: 200px;
+    color: aqua;
+    
+
+
+}
+.drop:active ul{
+    display: block;
+    padding: 20px;
+}
+
+.drop{
+    top:0;
+
+}
