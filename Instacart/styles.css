@@ -67,7 +67,7 @@ header .top-text{
 
 /* ********NAV SECTION*********** */
 
-nav .hamburgor-button-svg{
+.hamburgor-button-svg{
     padding: 1px 6px;
 }
 
@@ -113,7 +113,10 @@ DISPLAY NONE
 =================
 ----------------- */
 
-.tab-view{
+.total-nav-for-flex .tab-view{
+    
+
+
     display: none;
 }
 
@@ -149,6 +152,7 @@ media==768px
 
 header .top-items{
     height: 56px;
+
 }
 
 .top-items .top-img img{
@@ -156,10 +160,48 @@ header .top-items{
     height: 36px;
     margin: 0;
 }
+.total-nav-for-flex{
+    height: 80px;
+    padding: 24px 40px;
+}
+.nav-buttons .second-button {
+    font-size: 18px;
+    padding: 10px 16px;
+}
+.nav-buttons .first-button{
+    font-size: 18px;
+    font-family: font1;
+    margin-inline: 28px;
+    padding: 0;
+    padding-bottom: 1px;
+    color: #343558;
+
+}
+
+.total-nav-for-flex .tab-view{
+    display: flex;
+
+}
+.tab-view  svg{
+    margin-right: 8px;
+    margin-top: 2px;
+    display: flex;
+
+}
+/* -----------------
+=================
+DISPLAY NONE
+=================
+----------------- */
+.total-nav-for-flex .hamburgor-button-svg{
+    display: none;
+}
+.total-nav-for-flex .instacart-logo-mobile{
+    display: none;
 }
 
 
-
+}
 
 
 
