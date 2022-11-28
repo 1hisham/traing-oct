@@ -91,7 +91,7 @@ header .top-text{
     border-radius: 30px;
 }
 
-.instacart-logo{
+.instacart-logo-mobile{
     display: flex;
     padding-bottom: 4px;
     
@@ -107,6 +107,152 @@ header .top-text{
     align-items: center;
     justify-content: space-between;
 }
+
+.container-one .main-content-mobile h1{
+    font-size: 31px;
+    font-family: font2;
+    width: 256px;
+    line-height: 40px;
+    color: #343538;
+}
+
+.container-one .main-content-mobile {
+    padding: 16px;
+    padding-bottom: 32px;
+    background-color: #deedd6;
+    padding-top: 17px;
+}
+
+.container-two .black-text{
+    font-size: 23px;
+    color: #343538;
+}
+
+.container-two .green{
+    color: #0AAD0A;
+    font-size: 23px;
+}
+
+.container-two .top-text-two{
+    padding: 16px 32px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.container-two .card-sub-three span{
+    font-size: 12px;
+    color: #0AAD0A;
+    font-family: font2;
+}
+
+.container-two .card-sub-three {
+    display: flex;
+    align-items: center;
+}
+
+.container-two img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #E8E9EB;
+    border-radius: 29px;
+}
+
+.container-two .card-sub-one{
+
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.container-two .card-sub-two{
+    font-size: 18px;
+    line-height: 26px;
+    font-family: font1;
+}
+
+.container-two .card-flex{
+    display: flex;
+    align-items: center;
+    gap:5px;
+
+}
+
+.container-two .card{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    align-items: center;
+}
+
+.container-two .show-button{
+    font-size: 18px;
+    color: #0AAD0A;
+    line-height: 26px;
+    font-family: font1;
+    margin-top: 24px;
+
+}
+
+.container-two .total-flex-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    padding: 1px 6px;
+}
+
+.container-two .cards{
+    width: 100%;
+}
+
+.container-three .top-text-three h2{
+    font-size: 23px;
+    text-align: center;
+    color: #343538;
+    line-height: 32px;
+    padding-inline: 24px;
+    padding-bottom: 32px;
+    margin-top: 32px;
+    font-family: font;
+    font-weight: normal;
+}
+
+.container-three .text-content-three h3{
+    font-size: 28px;
+    line-height: 32px;
+    color: #343538;
+}
+
+.container-three .text-content-three p{
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 235;
+    font-weight: 400;
+    color: #343538;
+    margin: 15px 0;
+}
+
+.container-three .text-content-three{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.container-three .flex-card{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color:  #F6F7F8;
+    border-radius: 8px;
+}
+
+.container-three .flex-card img{
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+}
+
+.flex-card-three
 /* -----------------
 =================
 DISPLAY NONE
@@ -114,9 +260,9 @@ DISPLAY NONE
 ----------------- */
 
 .total-nav-for-flex .tab-view{
-    
-
-
+    display: none;
+}
+.container-one .flex-to-banners{
     display: none;
 }
 
@@ -182,12 +328,120 @@ header .top-items{
     display: flex;
 
 }
+
 .tab-view  svg{
     margin-right: 8px;
     margin-top: 2px;
     display: flex;
 
 }
+
+.container-one .select-contry{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container-one .select-contry svg{
+    width: 31px;
+    height: 25px;
+}
+
+.container-one .contry-container{
+    padding: 10px 12px ;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #C7C8CD;
+    border-radius: 8px;
+    margin-right: 32px;
+
+}
+
+.container-one{
+    margin-bottom: 32px;
+}
+
+.container-one select{
+    color: gray;
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+
+.container-one .texts-contant h1{
+    font-size: 41px;
+    color: #343538;
+    font-family: font1;
+    line-height: 52px;
+    
+}
+
+.container-one .texts-contant p{
+    margin-top: 16px;
+    color: #343538;
+    font-family: font;
+    font-size: 15px
+}
+
+.container-one .texts-contant{
+    width:578px ;
+}
+
+.container-one .flex-to-banners{
+    display: flex;
+    background-color: #deedd6;
+    background-image: url(https://www.instacart.com/image-server/x428/www.instacart.com/assets/homepage/homepage_background_full_m3_cropped-8d2d286263821da7decd7c61fb1db1eb0e3dec13e0c356277d6d3cb7484c024a.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    height: 220px;
+    padding: 39px ;
+    height: 220px;
+    width: 100%;
+
+}
+
+.container-two .black-text{
+    font-size: 31px;
+    color: #343538;
+}
+
+.container-two .green{
+    color: #0AAD0A;
+    font-size: 31px;
+}
+
+.container-two .top-text-two{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+.container-two .cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1080px;
+    width: 100%;
+    gap: 24px;
+
+}
+
+.container-two .card{
+    box-shadow: rgb(0 0 0 / 16%) 0px 2px 8px;
+    border-radius: 12px;
+}
+
+.container-two .total-flex-two{
+    padding-inline: 32px;
+}
+
+.container-two .show-button{
+    margin-top: 60px;
+}
+
+
 /* -----------------
 =================
 DISPLAY NONE
@@ -199,11 +453,41 @@ DISPLAY NONE
 .total-nav-for-flex .instacart-logo-mobile{
     display: none;
 }
+.container-one .main-content-mobile{
+    display: none;
+}
+.container-two .arrow-svg{
+    display: none;
+}
+
 
 
 }
 
 
+/* -----------------
+=================
+media==1144px
+=================
+----------------- */
+
+@media screen and (min-width:1144px){
+
+.container-two .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1080px;
+    width: 100%;
+    gap: 24px;
+    padding-top: 8px;
+
+}
+.container-one .flex-to-banners{
+    background-size: initial;
+}
+
+
+}
 
 
 
