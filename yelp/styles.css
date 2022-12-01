@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: font;
+    src: url(font/open-sans-regular.yji-aff9b80e384301f2ae0c.woff2);
+}
+@font-face {
+    font-family: font1;
+    src: url(font/open-sans-semibold.yji-d3abae27d3eac73b40a5.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(font/open-sans-bold.yji-1145ff0b749fff2d31bb.woff2);   
+}
+@font-face {
+    font-family: font3;
+    src: url(font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
+}
+@font-face {
+    font-family: font4;
+    src: url(font/poppins-bold.yji-9690ce6275ddc5645cfa.woff2);
+}
+
+/* -------------------------------
+===============================
+===============================
+        CONTAINER-ONE
+===============================
+===============================
+------------------------------- */
+
+
+.container-one {
+    height: 100vh;
+    background-color: olive;
+}
+
+.container-one .search-panel{
+    display: flex;
+  
+}
+
+.container-one  .first-search input{
+    width: 424px;
+    height: 48px;
+    padding: 13px 16px;
+    padding-right: 4px;
+
+}
+
+.container-one  .second-search input{
+    width: 424px;
+    padding: 13px 16px;
+    height: 48px;
+    margin-left: -4px;
+   
+}
+
+.container-one .search-logo{
+    width: 56px;
+    height: 48px;
+    background-color: #E00707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-one .search-logo svg{
+    color: white;
+}
+
+.container-one .search-bar-down li{
+    display: flex;
+    font-family: font;
+    color: rgba(255,255,255,1); 
+    font-family: font;
+    padding: 16px 16px 20px;
+
+
+}
+
+.container-one .search-bar-down span{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.container-one .search-bar-down ul{
+    display: flex;
+
+}
+
+.container-one .section-login-button p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(255,255,255,1);
+    font-family: font;
+    
+
+}
+
+.container-one .section-login-button{
+    display: flex;
+}
