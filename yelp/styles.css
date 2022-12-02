@@ -40,8 +40,7 @@ body{
 
 
 .container-one {
-    height: 100vh;
-    background-color: olive;
+
 }
 
 .container-one .search-panel{
@@ -50,7 +49,7 @@ body{
 }
 
 .container-one  .first-search input{
-    width: 424px;
+    width: 456px;
     height: 48px;
     padding: 13px 16px;
     padding-right: 4px;
@@ -58,7 +57,7 @@ body{
 }
 
 .container-one  .second-search input{
-    width: 424px;
+    width: 456px;
     padding: 13px 16px;
     height: 48px;
     margin-left: -4px;
@@ -101,14 +100,260 @@ body{
 
 .container-one .section-login-button p{
     font-size: 14px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 20px;
     color: rgba(255,255,255,1);
     font-family: font;
+    padding: 8px;
     
 
 }
 
 .container-one .section-login-button{
     display: flex;
+    max-height: 42px;
+}
+.container-one .log-in{
+    padding: 8px 16px;
+    background-color: transparent;
+    border:2px solid rgba(255,255,255,1);
+    border-radius: 4px;
+    color: rgba(255,255,255,1);
+
+}
+.container-one .log-in span{
+    font-size: 16px;
+    font-family: font3;
+    line-height: 24px;
+    margin-top: 1px;
+}
+
+.container-one .sign-up{
+    padding: 8px 16px;
+    margin: 0 0 0 12px;
+    background-color: #E00707;
+    border-radius: 6px;
+    border: none;
+    color: rgba(255,255,255,1);
+    /* border: 2px solid #E00707; */
+}
+
+.container-one .sign-up span{
+    font-size: 16px;
+    font-family: font3;
+
+    line-height: 24px;
+    margin-top: 1px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-height: 130px;
+    padding-top:  24px;
+    padding-inline: 40px;
+}
+
+.container-one .yelp-svg img{
+    margin-right: 150px;
+}
+
+
+--------------------
+drop down 
+--------------------
+.container-two{
+    position: relative;
+}
+
+.container-two .inside{
+    width: 10px;
+    height: 90px;
+    border-radius: 4px;
+    position: relative;
+    background-color:  #ffffff80;
+    margin-bottom: 20px;
+    /* margin: 250px; */
+}
+    
+
+
+
+.container-two .inside span{
+    width: 10px;
+    height: 90px;
+    position: absolute;
+    border-radius: 6px;
+    top: 0;
+    background-color: #fff;
+    animation: loop 2s infinite normal;
+    animation-delay: 6s;
+
+}
+
+.container-two .on-two span{
+   top: 0;
+    
+    animation: loop 2s infinite normal;
+    animation-delay: 4s;
+}
+
+.container-two .on-three span{
+    top: 0;
+    animation: loop 2s infinite normal;
+     animation-delay: 6s;
+ 
+ }
+
+.container-two .inside-container{
+
+    height: 350px;
+    position: relative;
+    
+    width: 48px;
+
+
+}
+
+/* .container-two .inside-container{
+    height: 300px;
+} */
+
+@keyframes loop {
+    0%{
+        top: 0;
+        height: 00%;
+
+    }
+    30%{
+        top:0;
+        height: 30%;
+        background-color: #E00707;
+
+    }
+    60%{
+        top: 0;
+        height: 60%;
+    }
+    99%{
+        top: 0;
+        height: 100%;
+    }
+    100%{
+        top:0;
+        height: 0%;
+    }
+}
+
+.container-two .side-container button{
+    background-color: #E00707;
+    border: none;
+    padding: 12px 32px; 
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,1);
+}
+.container-two .side-container span{
+    font-size: 16px;
+    margin-left: 8px;
+
+}
+
+.container-two .side-container h1{
+    font-size: 48px;
+    color: rgba(255,255,255,1);
+    font-family: font2;
+    font-weight: 700;
+}
+
+.container-two{
+    display: flex;
+    width: 1124px;
+    margin: auto auto;    
+    max-width: 1124px;
+    padding-top: 64px;
+ 
+}
+
+.container-two .side-container{
+    width: 450px;
+    
+}
+
+.container-three .container-end{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 1100;
+    margin-top: 40px;
+    padding-bottom: 100px;
+    
+    margin: auto auto;
+}
+.container-three .container-end span{
+    font-size: 14px;
+    color: #fff;
+    font-family: font2;
+}
+.container-three .container-end  p{
+    font-size: 14px;
+    color: #fff;
+    font-family: font;
+}
+
+.banner-container{
+    animation: banner 12s infinite;
+    background:linear-gradient(90deg,#0006,#0000001a 56%);
+    animation-delay: 200ms;
+
+    z-index: 0;
+
+}
+
+@keyframes banner {
+    0%{
+        background: url(assets/yelp1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        
+    }
+    33.33%{
+        background: url(assets/yelp1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        
+ 
+     
+    }
+    33.34%{
+        background: url(assets/yelp2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+     
+    }
+    66.63%{
+        background: url(assets/yelp2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+   
+    }
+    66.64%{
+        background: url(assets/yelp3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+       
+    }
+    100%{
+        background: url(assets/yelp3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+     
+    }
 }
