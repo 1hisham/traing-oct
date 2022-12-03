@@ -141,7 +141,6 @@ body{
 .container-one .sign-up span{
     font-size: 16px;
     font-family: font3;
-
     line-height: 24px;
     margin-top: 1px;
 }
@@ -187,7 +186,7 @@ drop down
     top: 0;
     background-color: #fff;
     animation: loop 2s infinite normal;
-    animation-delay: 6s;
+    animation-delay: 2s;
 
 }
 
@@ -209,10 +208,7 @@ drop down
 
     height: 350px;
     position: relative;
-    
     width: 48px;
-
-
 }
 
 /* .container-two .inside-container{
@@ -356,4 +352,108 @@ drop down
 
      
     }
+}
+
+.card-container{
+
+    border: 1px solid #ebebeb;
+    height: 376px;
+    /* padding: 16px 24px; */
+    width: 300px;
+
+   
+}
+
+.post-img{
+    background: url(assets/card-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -72px;
+    width: 100%;
+    height: 200px;
+
+}
+
+.card-container .profile-pic img{
+
+    border-radius: 50%;
+
+}
+.profile-name span{
+    font-size: 14px;
+    font-family: font1;
+    color: #2e2d2f;
+}
+
+.profile-name p{
+    font-size: 14px;
+    font-family: font;
+    color: #2e2d2f;
+}
+
+.card-container .user-profile{
+    display: flex;
+   padding: 12px 24px;
+}
+ .card-container .post-text{
+    color: #027A97;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: font1;
+    margin-bottom: 5px;
+    padding-left: 24px;
+
+ }
+
+ .card-container  .thumbs-svg{
+    margin-top: 30px;
+    padding-left: 19px;
+ }
+
+
+ /* -------------
+ CARD two
+ ------------- */
+
+ .post-img-two{
+    background: url(assets/cake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -162px;
+    width: 100%;
+    height: 92px;
+
+}
+ .sub-container .item-name {
+    color: #027A97;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: font1;
+    margin-bottom: 5px;
+    padding-left: 24px;
+
+
+}
+.sub-container .read {
+    color: #027A97;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: font;
+    margin-bottom: 5px;
+    padding-left: 24px;
+
+
+}
+.sub-container p{
+    font-size: 14px;
+    color: #2e2d2f;
+    letter-spacing: 0;
+    text-align: left;
+    font-weight: 400;
+    padding-inline: 19px;
+}
+.sub-container .all-star-svgs{
+    padding: 8px;
+    height: 36px;
+
 }
