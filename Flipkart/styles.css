@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: font;
+    src: url(fonts/roboto-regular.woff2);
+}
+
+
+        /* ----------------------------
+        ============================
+            HEADER SECTION
+        ============================
+        ---------------------------- */
+
+
+
+/* ----------------------------
+============================
+     NAV SECTION
+============================
+---------------------------- */
+nav .total-nav-container{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+}
+
+.total-nav-container .filpkart-logo-set img{
+    width: 23px;
+    height: 23px;
+}
+.total-nav-container .filpkart-logo-set svg{
+    margin-inline: 11.5px;
+}
+
+.total-nav-container .filpkart-logo-set{
+    display: flex;
+    align-items: center;
+}
+
+.total-nav-container .search-bar-set{
+    display: flex;
+    align-items: center;
+
+}
+
+.filpkart-logo-set h1{
+    font-size: 16px;
+    font-family: font;
+    color: #ffffff;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-left: 12.3px;
+}
+
+.search-bar-set span{
+    font-family: font;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-inline: 25.69px;
+}
+
+.search-bar-set svg{
+    margin-inline: 13px;
+}
+
+.search-bar-set .search{
+    margin-inline: 10px;
+}
+
+.sorting-filter img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+}
+
+.sorting-filter span{
+    font-size: 14px;
+}
+
+.sorting-filter .sorting , .filter{
+    display: flex;
+    align-items: center;
+    color: #212121;
+    flex: 1;
+    justify-content: center;
+    height: 48px;
+}
+
+.sorting-filter .sorting{
+    border-right: 1px solid rgba(234,234,234,1.00);
+}
+
+.sorting-filter {
+    display: flex;
+    width: 100%;
+}
+
+.filpkart-plus-btn img{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+.filpkart-plus-btn span{
+    font-size: 12px;
+    color: #212121;
+}
+
+.container-one .filpkart-plus-btn{
+    max-width: 100px;
+    height: 40px;
+    display: flex;
+    border: 1px solid rgb(219, 219, 219);
+    padding-right: 8px;
+    margin-inline: 15px;
+    margin-top: 8px;
+    align-items: center;
+    border-radius: 4px;
+
+}
