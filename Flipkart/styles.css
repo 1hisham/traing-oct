@@ -110,18 +110,18 @@ nav .total-nav-container{
     width: 100%;
 }
 
-.filpkart-plus-btn img{
+.filpkart-plus-btn img ,.filpkart-rupee-btn img{
     width: 32px;
     height: 32px;
     margin-right: 4px;
 }
 
-.filpkart-plus-btn span{
+.filpkart-plus-btn span , .filpkart-rupee-btn span{
     font-size: 12px;
     color: #212121;
 }
 
-.container-one .filpkart-plus-btn{
+.container-one .filpkart-plus-btn , .filpkart-rupee-btn{
     max-width: 100px;
     height: 40px;
     display: flex;
@@ -132,4 +132,8 @@ nav .total-nav-container{
     align-items: center;
     border-radius: 4px;
 
+}
+
+.total-assured-btn{
+    display:flex ;
 }
