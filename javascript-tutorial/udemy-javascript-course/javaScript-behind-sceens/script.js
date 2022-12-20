@@ -110,17 +110,31 @@
 // f()
 
 
-let age =30 ;
-let oldAge = age;
-age =31;
-console.log(age);
-console.log(oldAge);
+// let age =30 ;
+// let oldAge = age;
+// age =31;
+// console.log(age);
+// console.log(oldAge);
 
-const me = {
-    name:'jonas',
-    age: 30,
+// const me = {
+//     name:'jonas',
+//     age: 30,
+// };
+// const friend = me;
+// friend.age = 27;
+// console.log('friend:',friend);
+// console.log('me', me)
+
+let lastName = 'willams';
+let oldLastName = lastName;
+lastName ='Davis';
+console.log(lastName, oldLastName);
+
+const jessica = {
+    firstName:'jessica',
+    lastName: 'willams',
+    age: 28,
+
 };
-const friend = me;
-friend.age = 27;
-console.log('friend:',friend);
-console.log('me', me)
+
+const marriedJessica = jessica;
