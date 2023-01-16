@@ -1,7 +1,5 @@
-var _loop_1 = function (i) {
+for (let i = 1; i <= 5; i++) {
     setTimeout(function () { console.log(i); }, 1000);
-};
-for (var i = 1; i <= 5; i++) {
-    _loop_1(i);
+    console.log(i);
 }
 //# sourceMappingURL=tutorial7.js.map
