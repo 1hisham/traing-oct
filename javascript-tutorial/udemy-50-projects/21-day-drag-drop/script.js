@@ -9,11 +9,12 @@ for(const empty of empties) {
     empty.addEventListener("dragenter",dragEnter)
     empty.addEventListener("dragleave",dragLeave)
     empty.addEventListener("drop",dragDrop)
+    // console.log(dragDrop);
 }
 
 function dragStart() {
     this.className += ' hold '
-    setTimeout(() => this.className = 'invisible',0)
+    setTimeout(() => this.className = 'invisible',1000)
 }
 
 
