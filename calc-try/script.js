@@ -14,8 +14,27 @@ number.forEach((num) => {
     console.log(displayEl);
     
 
+    
+
   })
 
+})
+
+let oprStore = "";
+let acc = 0;
+
+oprator.forEach((opr) => {
+  opr.addEventListener('click', () => {
+    console.log("hello");
+    oprStore = opr.innerHTML
+    console.log(oprStore);
+    if(acc===0){
+      acc = num.innerHTML
+    }
+
+    acc += displayEl.innerHTML  
+
+  })
 })
 
 
