@@ -1,89 +1,75 @@
-'use strict'
+"use strict";
 
-
-const number = document.querySelectorAll('.number')
-const oprator = document.querySelectorAll('.operator')
-const displayEl = document.querySelector('.display')
-
-
+const number = document.querySelectorAll(".number");
+const oprator = document.querySelectorAll(".operator");
+const displayEl = document.querySelector(".display");
+let numText;
 
 number.forEach((num) => {
-  num.addEventListener('click',() =>{
-    console.log(`the click number is ${num.innerHTML}`); 
+  num.addEventListener("click", () => {
+    // forClear();
+    console.log(`the click number is ${num.innerHTML}`);
     displayEl.innerHTML += num.innerHTML;
-    console.log(displayEl);
-    
-
-    
-
-  })
-
-})
-
-let oprStore = "";
-let acc = 0;
-
-oprator.forEach((opr) => {
-  opr.addEventListener('click', () => {
-    console.log("hello");
-    oprStore = opr.innerHTML
-    console.log(oprStore);
-    if(acc===0){
-      acc = num.innerHTML
+    // console.log(displayEl);
+    function forNum() {
+      return num.innerHTML;
     }
 
-    acc += displayEl.innerHTML  
+    numText = forNum();
+  });
+});
 
-  })
-})
+let oprStore = "";
+let accumulator = 0;
+let stage = 0;
+let prv;
 
+oprator.forEach((opr) => {
+  opr.addEventListener("click", () => {
+    oprStore = opr.innerHTML;
+    if (stage === 0) {
+      accumulator += stringToInt(displayEl.innerHTML);
+      console.log(accumulator);
+      // console.log(numText,"this is num.innerText");
+      prv = opr.innerHTML;
 
+      displayEl.innerHTML = "";
+      stage = 1;
+    } else {
+      switch (prv) {
+        case "+":
+          accumulator += stringToInt(displayEl.innerHTML);
+          console.log(accumulator, "this is accumulatior");
+          displayEl.innerHTML = "";
+          displayEl.innerHTML = accumulator;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          break;
+        case "-":
+          accumulator -= stringToInt(displayEl.innerHTML);
+          displayEl.innerHTML = "";
+          displayEl.innerHTML = accumulator;
+          break;
+        case "*":
+          accumulator *= stringToInt(displayEl.innerHTML);
+          displayEl.innerHTML = "";
+          displayEl.innerHTML = accumulator;
+          break;
+        case "/":
+          accumulator /= stringToInt(displayEl.innerHTML);
+          displayEl.innerHTML = "";
+          displayEl.innerHTML = accumulator;
+          break;
+      }
+      prv = oprStore;
+      
+    }
+  });
+});
+displayEl.innerHTML = accumulator;
+displayEl.innerHTML = "";
+// function forClear(){
+//   displayEl.innerHTML = ""
+// }
 
 function charToDigit(x) {
   switch (x) {
@@ -108,16 +94,14 @@ function charToDigit(x) {
       return 8;
     case "9":
       return 9;
-    }
-    
-  }  
-  
-  function stringToInt(x){
-    let num = 0
-    for(let i of  x){
-    num = num * 10 + charToDigit(i)
+  }
+}
+
+function stringToInt(x) {
+  let num = 0;
+  for (let i of x) {
+    num = num * 10 + charToDigit(i);
   }
   return num;
-  }
+}
 
-3 
