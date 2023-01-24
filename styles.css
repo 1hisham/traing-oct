@@ -1,0 +1,20 @@
+body{
+    margin-left: 250px;
+
+}
+body a{
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+
+}
+body a:hover{
+    cursor: pointer;
+    color: rgb(20, 20, 247);
+    transform: scale(1.2);
+}
