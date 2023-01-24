@@ -1,6 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    
+    background-color: white;
+    display: flex;
+    
 }
 *{
     margin: 0;
@@ -13,7 +17,11 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
+border-radius: 6px;
+background-color: rgb(70, 70, 70);
+
 margin: auto;
+
 
 }
 
@@ -44,19 +52,29 @@ margin: auto;
 
 .container .clear{
     background-color: #769FCD;
+    color: white;
+    font-weight: bold;
 }
 .container  .display{
     border: 1px solid gray;
-    margin-top: 20px;
-    width: 350px;
+    margin-top: 25px;
+    width: 340px;
     padding: 12px;
     text-align: right;
     border-radius: 5px;
+    margin-bottom: 5px;
     font-size: 25px;
     height: 54px;
     overflow-x: scroll;
+    
+    background-color: rgb(230, 236, 236);
 }
 
 .container  .display::-webkit-scrollbar{
     display: none;
+}
+.container .equal{
+    background-color: #4686cf;
+    color: white;
+    font-weight: bold;
 }
