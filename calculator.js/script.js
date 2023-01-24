@@ -166,7 +166,7 @@ equal.addEventListener('click', () =>{
     break;
     case "/":
      numb = stringToInt(displayEl.innerText)
-    numb /= accumulator
+    numb = accumulator / numb
     displayEl.innerHTML = numb
     break;
   }
