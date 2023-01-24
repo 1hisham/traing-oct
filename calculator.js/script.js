@@ -7,6 +7,18 @@ const oprator = document.querySelectorAll(".operator");
 const displayEl = document.querySelector(".display");
 let numText;
 let storeDisplay = 0;  
+let flagofcear = 0
+let oprStore = "";
+let accumulator = 0;
+let stage = 0;
+let prv;
+
+
+// -------------------------
+// =========================
+//     INPUT BUTTON
+//  ========================
+//  ------------------------
 
 number.forEach((num) => {
   num.addEventListener("click", () => {
@@ -29,11 +41,14 @@ number.forEach((num) => {
 
   });
 });
-let flagofcear = 0
-let oprStore = "";
-let accumulator = 0;
-let stage = 0;
-let prv;
+
+
+
+// -------------------------
+// =========================
+//     OPERATOR BUTTON
+//  ========================
+//  ------------------------
 
 oprator.forEach((opr) => {
   opr.addEventListener("click", () => {
@@ -79,6 +94,16 @@ oprator.forEach((opr) => {
 displayEl.innerHTML += accumulator;
 displayEl.innerHTML = "";
 
+
+
+
+
+// -------------------------
+// =========================
+//     sting to interger
+//  ========================
+//  ------------------------
+
 function charToDigit(x) {
   switch (x) {
     case "0":
@@ -114,6 +139,13 @@ function stringToInt(x) {
 }
 
 
+
+// -------------------------
+// =========================
+//     EQUAL BUTTON
+//  ========================
+//  ------------------------
+
 equal.addEventListener('click', () =>{
   let numb;
   switch(prv){
@@ -139,8 +171,17 @@ equal.addEventListener('click', () =>{
     break;
   }
  
+  flagofcear = 1;
+  oprStore = "";
+  accumulator = 0;
+  stage = 1;
 
 })
+// -------------------------
+// =========================
+//     CLEAR BUTTON
+//  ========================
+//  ------------------------
 
 clearBtn.addEventListener('click', () => {
   displayEl.innerHTML = ''
