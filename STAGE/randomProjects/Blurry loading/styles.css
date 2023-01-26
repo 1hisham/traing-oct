@@ -1,0 +1,26 @@
+body{
+    display: flex;
+
+    overflow: hidden;
+    
+}
+.bg {
+    background: url("/martin-baron-b5KXiKeIdLI-unsplash.jpg")  no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    z-index: -1;
+    filter: blur(30px);
+ 
+}
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+    /* justify-content: center;
+    display: flex;
+    align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  

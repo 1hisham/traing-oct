@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+.faq{
+    border: 2px solid black;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+.faq.active{
+    background: gray;
+}
+.faq-toggle{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.faq.active .answer{
+    display: block;
+}
+.answer{
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+i {
+    position: absolute;
+
+}
+.faq-toggle .fa-times{
+    display: none;
+}
+.faq.active .fa-times{
+    display: block;
+}
+
+.faq-toggle .fa-chevron-down{
+    display: block;
+}
+.faq.active .fa-chevron-down{
+    display: none;
+}
