@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 230vh; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: fontnm;
+  src: url(fonts/Graphik-Regular-Web.woff2);
+}
+@font-face {
+  font-family: fontmd;
+  src: url(fonts/Graphik-Medium-Web.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(fonts/Guardian-EgypTT-Light.woff2);
+}
+
+.font {
+  font-family: font;
+}
+.font1 {
+  font-family: font1;
+}
+.font2 {
+  font-family: font2;
+}
+/* ===========
+===========
+header - mobile 
+===========
+=========== */
+.total-header{
+  padding-left: 9px;
+  padding-right: 12px;
+  
+}
+
+
+
+.total-header .mobile-header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.mobile-header-top .esty-logo {
+  padding-bottom: 5px;
+  display: block;
+
+  
+}
+
+.mobile-header-top .sign-btn{
+  background-color: transparent;
+  font-size: 13px;
+  border: none;
+  font-family: fontmd;
+  color: #222222;
+  font-weight: 550;
+  line-height: 1.4;
+  padding: 9px 15px;
+  margin-right: 6px;
+
+
+}
+.mobile-header-top .top-left-nav {
+  display: flex;
+}
+.top-left-nav .svg-heart,
+.top-left-nav .svg-bag{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 12px;
+  padding-top: 13px;
+
+}
+.top-left-nav .svg-heart{
+  padding-inline: 10px;
+}
+
+
+
+
