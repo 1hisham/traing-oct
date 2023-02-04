@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 230vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: fontnm;
+  src: url(fonts/Graphik-Regular-Web.woff2);
+}
+@font-face {
+  font-family: fontmd;
+  src: url(fonts/Graphik-Medium-Web.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(fonts/Guardian-EgypTT-Light.woff2);
+}
+
+.font {
+  font-family: font;
+}
+.font1 {
+  font-family: font1;
+}
+.font2 {
+  font-family: font2;
+}
+/* ===========
+===========
+header - mobile 
+===========
+=========== */
+.total-header {
+  padding-left: 9px;
+  padding-right: 12px;
+}
+
+.total-header .mobile-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-header-top .esty-logo {
+  padding-bottom: 4px;
+  display: block;
+}
+
+.mobile-header-top .sign-btn {
+  background-color: transparent;
+  font-size: 13px;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #222;
+  font-weight: 550;
+
+  padding: 9px 15px;
+  margin-right: 6px;
+  min-height: 36px;
+}
+.mobile-header-top .top-left-nav {
+  display: flex;
+}
+.top-left-nav .svg-heart,
+.top-left-nav .svg-bag {
+  padding: 12px;
+  padding-top: 11px;
+}
+.top-left-nav .svg-heart {
+  padding-inline: 10px;
+}
+
+.mobile-header-bottom input {
+  padding-left: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 42px;
+  font-size: 16px;
+  line-height: 28px;
+  height: 48px;
+  display: flex;
+  flex: 1;
+  position: relative;
+  border: none;
+  border: 2px solid black;
+  border-radius: 96px;
+}
+.mobile-header-bottom button {
+  background-color: transparent;
+  min-height: 48px;
+  padding: 10px 20px 10px 14px;
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  border: none;
+}
+
+.mobile-header-bottom .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  padding-top: 1px;
+}
+
+.mobile-header-bottom {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.mobile-header-bottom .hambugger {
+  padding: 12px;
+  padding-left: 3px;
+  margin-bottom: 12px;
+}
+
+.tab-header {
+  display: none;
+}
+
+
+
+
+
+.nav-bottom .container{
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .esty-logo svg {
+    width: 80px;
+    height: 40px;
+  }
+  .nav-bottom .container{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .total-header {
+    display: none;
+  }
+  .tab-header {
+    display: flex;
+    padding: 12px 36px;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+    padding-left: 33px;
+    padding-right: 36px;
+  }
+  .nav-bottom .container{
+    display: block;
+  }
+
+  .search-bar input {
+    padding-left: 18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 42px;
+    font-size: 17px;
+    line-height: 28px;
+    height: 48px;
+    display: flex;
+    flex: 1;
+    border: none;
+    border: 2px solid black;
+    border-radius: 96px;
+    background-color: rgba(34, 34, 34, 0.1);
+  }
+  .search-bar button {
+    background-color: transparent;
+    min-height: 48px;
+    padding: 10px 20px 10px 14px;
+    font-size: 12px;
+    position: absolute;
+    right: 21px;
+    border: none;
+  }
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 1px;
+    position: relative;
+    padding-right: 18px;
+  }
+
+  .sign-btn {
+    background-color: transparent;
+    font-size: 13px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222;
+    font-weight: 550;
+    white-space: nowrap;
+
+    padding: 9px 16px;
+    margin-right: 6px;
+    min-height: 36px;
+  }
+  .top-left-nav {
+    display: flex;
+  }
+  .top-left-nav .svg-heart,
+  .top-left-nav .svg-bag {
+    padding: 12px;
+    padding-top: 11px;
+  }
+  .top-left-nav .svg-heart {
+    padding-inline: 10px;
+    padding-right: 12px;
+    margin-left: 2px;
+  }
+  .esty-logo {
+    padding-right: 8px;
+  }
+  .nav-bottom .category{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 36px ;
+    max-width: 1400px;
+    margin: auto;
+    gap: 30px;
+  }
+  .nav-bottom .category li{
+    list-style: none;
+    font-size: 13px;
+    font-family: fontnm;
+    color: #222;
+    padding:0 0 12px;
+    margin: 4px 12px 0 0 ;
+
+
+  }
+  .nav-bottom .category li:last-child{
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+}
