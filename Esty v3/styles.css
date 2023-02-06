@@ -126,13 +126,155 @@ header - mobile
   display: none;
 }
 
+.all-headings{
 
+  background-color: #d7e6f5 ;
+  height: 16%;
+}
+.all-headings h2{
+  font-family: font2;
+  font-size:20px ;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: .35;
+  color: #222;
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+}
+.all-headings ul{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  
+}
+.all-headings li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: fontnm;
+  font-size: 13px;
+  font-weight: 700;
+}
+.all-headings img{
+  max-width:96px ;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+.all-headings ul span{
+  margin-bottom:6px ;
+  text-align: center;
+  margin-inline: 16px;
+  color: #222;
+}
+.deals-of-day .top-text-deals{
+  padding-inline: 10px;
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1380px;
+  margin: bottom 12px; ;
+  margin: auto;
+}
+.deals-of-day .top-text-deals h2{
+  font-family: fontnm;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.deals-of-day .top-text-deals span{
+  font-size: 13px;
+  font-family: fontnm;
+  font-weight: 700;
+  color: #222;
+
+
+}
+.top-text-deals .left-arrow{
+  display: flex;
+  align-items: center;
+
+}
+.top-text-deals .left-arrow img{
+  width: 12px;
+  height: 24px;
+  margin-left: 6px;
+
+}
+
+ .deals-of-day .image-cards{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-inline: 12px;
+ } 
+ .image-cards a{
+   min-height: 96px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  
+
+   border: 1px solid rgba(34,34,34,.15);
+
+   border-bottom-left-radius:12px;
+   border-bottom-right-radius: 12px;
+ }
+
+ .deals-of-day .image-cards li {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-grow: 1;
+  padding: 6px;
+  border-radius: 50%;
+  max-width: 265px;
+ }
+ .image-cards img{
+  border-top-left-radius:12px;
+  border-top-right-radius: 12px;
+ 
+
+ }
+ .image-cards p{
+  font-family: fontnm;
+  font-weight: 400;
+  font-size: 13px;
+ }
+ .image-cards span{
+  font-family: fontmd;
+
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 6px;
+
+  padding-bottom: 6px; 
+  color: #222;
+ }
 
 
 
 .nav-bottom .container{
   display: none;
 }
+@media screen and (min-width: 507px) {
+  .all-headings{
+    height: 14%;
+  }
+  .deals-of-day .image-cards li{
+    width: 33%;
+  }
+
+
+}
+
 @media screen and (min-width: 768px) {
   .esty-logo svg {
     width: 80px;
@@ -140,6 +282,31 @@ header - mobile
   }
   .nav-bottom .container{
     display: none;
+  }
+  .all-headings ul{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 24px;
+  }
+  .all-headings h2{
+    font-size: 26px;
+    line-height: 42px;
+  }
+  .all-headings{
+    height: 7.5%;
+  }
+  .all-headings img{
+    max-width: 86px;
+    margin-bottom: 12px;
+
+  }
+  .all-headings ul span{
+    width: 75%;
+    text-align: center;
+  }
+  .image-cards span{
+  
+  padding-right: 14px;
   }
 }
 
@@ -248,8 +415,47 @@ header - mobile
   .nav-bottom .category li:last-child{
     white-space: nowrap;
   }
+  
 }
 
 @media screen and (min-width: 900px) {
+  .all-headings h2{
+    font-size: 32px;
+    line-height: 36px;
+    padding: 18px;
+
+  }
+  .all-headings img{
+    max-width: 114px;
+
+  }
+  .all-headings{
+    height: 9%;
+  }
+  .all-headings ul span{
+    font-size: 16px;
+    width: 79.5%;
+    color: #222;
+    
+  }
+  .image-cards span{
+  
+    padding-right: 35px;
+    }
+
+  .deals-of-day .image-cards li{
+    width: 16%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .all-headings ul{
+    max-width: 1080px;
+    margin: auto;
+  }
+  .all-headings{
+    height: 7.5%;
+  }
 
 }
