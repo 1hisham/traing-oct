@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 230vh;
+
 }
 
 * {
@@ -129,7 +129,7 @@ header - mobile
 .all-headings{
 
   background-color: #d7e6f5 ;
-  height: 16%;
+  height: 35%;
 }
 .all-headings h2{
   font-family: font2;
@@ -259,19 +259,79 @@ header - mobile
   color: #222;
  }
 
+ .shop-selection .heading-top img{
+  width: 24px;
+  height: 24px;
 
+
+ }
+ .shop-selection .heading-top {
+  display: flex;
+  align-items: center;
+  font-family: fontnm;
+  gap: 5px;
+  justify-content: center;
+  padding-top: 30px;
+ }
+  .shop-selection .heading-top h2{
+  font-size: 18px;
+  line-height: 24px;
+  text-align:center;
+ }
+ .shop-selection  p{
+  color: #595959;
+  font-family: fontnm;
+  text-align: center;
+  font-size: 13px;
+  line-height:18px;
+  padding-top: 10px;
+  font-weight: 400;
+ }
+
+ .total-card-holder{
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 12px;
+
+ }
+ .total-card-holder div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-grow: 1;
+  padding: 6px;
+  /* max-width: 265px; */
+
+ }
+ .total-card-holder div img{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+ }
+ .total-card-holder  span{
+  display: flex;
+  align-items: center;
+   font-family: fontmd;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid rgba(34,34,34,.15);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px ;
+  min-height: 60px;
+  font-size: 16px;
+
+ }
 
 .nav-bottom .container{
   display: none;
 }
 @media screen and (min-width: 507px) {
   .all-headings{
-    height: 14%;
+    height: 33%;
   }
   .deals-of-day .image-cards li{
     width: 33%;
   }
-
+  
 
 }
 
@@ -293,7 +353,7 @@ header - mobile
     line-height: 42px;
   }
   .all-headings{
-    height: 7.5%;
+    height: 18%;
   }
   .all-headings img{
     max-width: 86px;
@@ -308,6 +368,27 @@ header - mobile
   
   padding-right: 14px;
   }
+  .total-card-holder div{
+    width: 33%;
+  }
+  .shop-selection p{
+    display: none;
+  }
+  .shop-selection .heading-top h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .shop-selection .heading-top{
+    justify-content: flex-start;
+    padding-left: 12px;
+
+  }
+  .shop-selection .heading-top img{
+    width: 36px;
+    height: 36px;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -412,13 +493,12 @@ header - mobile
 
 
   }
+
   .nav-bottom .category li:last-child{
     white-space: nowrap;
   }
   
-}
 
-@media screen and (min-width: 900px) {
   .all-headings h2{
     font-size: 32px;
     line-height: 36px;
@@ -430,7 +510,7 @@ header - mobile
 
   }
   .all-headings{
-    height: 9%;
+    height: 20%;
   }
   .all-headings ul span{
     font-size: 16px;
@@ -446,6 +526,30 @@ header - mobile
   .deals-of-day .image-cards li{
     width: 16%;
   }
+  .deals-of-day .top-text-deals{
+    margin: bottom 12px;
+  }
+  .total-card-holder div:last-child{
+    display: none;
+  }
+  .total-card-holder div{
+    width: 20%;
+  }
+  .total-card-holder  span{
+    min-height: 78px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .all-headings{
+    height: 15%;
+  }
 
 }
 
@@ -455,7 +559,29 @@ header - mobile
     margin: auto;
   }
   .all-headings{
-    height: 7.5%;
+    height: 14%;
   }
+  .deals-of-day .image-cards {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .total-card-holder {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+
+.shop-selection .heading-top{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: auto;
+}
+  /* .shop-selection{
+    max-width: 1400px;
+    margin: auto;
+  } */
 
 }
