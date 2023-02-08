@@ -3,6 +3,7 @@ const category = document.querySelector(".category");
 const discoverItems = document.querySelector(".image-container");
 const dealsCard = document.querySelector(".image-cards");
 const shopSelection = document.querySelector(".shop-selection");
+const popularGift = document.querySelector(".popular-gift-cards")
 
 const categorylist = {
   sales: "Seller's Sales Hub",
@@ -158,13 +159,182 @@ const selectionItems = [
 
 const popularGiftsNow = [
   {
-    imgURL:`https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg`,
-    caption:`Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case `
+    imgURL: `https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg`,
+    caption: `Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "9,516" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${1,713}`,
+      payPrice: 0,
+      discount: `${50}`,
+    },
+    freeDelivery: "",
+  },
+  {
+    imgURL: `https://i.etsystatic.com/32477306/c/2000/1589/0/256/il/0bcd64/3491080620/il_340x270.3491080620_oh18.jpg`,
+    caption: `Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift" `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "13,587" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${3,603}`,
+      payPrice: 0,
+      discount: `${50}`,
+    },
+    freeDelivery: "",
+  },
+  {
+    imgURL: `https://i.etsystatic.com/25168585/c/2500/1987/0/181/il/214e7e/4589233930/il_340x270.4589233930_dg79.jpg`,
+    caption: `Custom Pet Portraits Using Pet Photo Personalized Digital Dog Portraits Cat Portraits Custom Dog Portraits Custom Pet Art Pet Drawing `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "11,134" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${1,275}`,
+      payPrice: 0,
+      discount: `${40}`,
+    },
+    freeDelivery: "yes",
+  },
+  {
+    imgURL: `https://i.etsystatic.com/28045281/r/il/3f41fa/3897994052/il_340x270.3897994052_l8xd.jpg`,
+    caption: `Sun catcher/ Crystal suncatcher/ Crystal Rainbow maker/ Aurora gemstone suncatcher/ crystal prism/ wall hanging/ Home decor/ Gift 4 women `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "6,866" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${2,657}`,
+      payPrice: 0,
+      discount: `${10}`,
+    },
+    freeDelivery: "",
+  },
+  {
+    imgURL: `https://i.etsystatic.com/27890741/c/2343/1862/320/560/il/31a0dd/4028709894/il_340x270.4028709894_i6tr.jpg`,
+    caption: `Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality &amp; DURABLE `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "12,391" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${1,455}`,
+      payPrice: 0,
+      discount: `${50}`,
+    },
+    freeDelivery: "",
+  },
+  {
+    imgURL: `https://i.etsystatic.com/26694795/c/2445/1943/282/0/il/035b01/3254592822/il_340x270.3254592822_5dss.jpg`,
+    caption: `Handmade Damascus Pocket Knife Rose Wood Handle Birthday Gift Folding Knife Groomsmen Gift Anniversary Wedding Personalized Gift for Men `,
+    videoURL: "",
+    rating: { stars: `${3}`, amountOfRating: "6,238" },
+    amount: {
+      symbol: `$`,
+      originalPrice: `${8,232}`,
+      payPrice: 0,
+      discount: `${70}`,
+    },
+    freeDelivery: "",
+  },
+];
+        //  DISCOUNT PRICE
+
+let discountPrice = 0;
+let price = 0;
+function calculationDiscount() {
+  for (let i = 0; i < popularGiftsNow.length; i++) {
+    discountPrice =
+    popularGiftsNow[i].amount.originalPrice *
+    (popularGiftsNow[i].amount.discount / 100);
+    console.log(popularGiftsNow[i].amount.originalPrice);  
+    price = popularGiftsNow[i].amount.originalPrice - discountPrice;
+    popularGiftsNow[i].amount.payPrice = price;
+    console.log(popularGiftsNow[i].amount.payPrice);
+  }  
+}  
+// calculationDiscount();
+
+// function forRatingStars(){
+//   for(let i = 0; i < z ; i++){
+//     let loop = loop + svg
+//     return loop
+//   }
+// }
 
 
-  }
-]
 
+                    // POPULAR-GIFT
+
+
+
+                    const headingOnPopularCard = document.createElement('h2')                    
+                    popularGift.appendChild(headingOnPopularCard)
+headingOnPopularCard.innerHTML = "Popular gifts right now"
+
+function popularGiftCardSingle(imageUrl, imageDescription, starRatings, totalRatings, symbols, payPrice, prices, discounts,freeDeliverys ){
+  const fullCard = document.createElement('div')
+  fullCard.classList.add('full-card')
+  popularGift.appendChild(fullCard)
+  
+  const image = document.createElement('img')
+  fullCard.appendChild(image)
+  image.src = imageUrl
+  
+  const bottomContainer = document.createElement('li')
+  bottomContainer.classList.add("bottom-container")
+  fullCard.appendChild(bottomContainer)
+  // popularGiftsNow[key]
+  const imageText = document.createElement('h2')
+  bottomContainer.appendChild(imageText)
+  imageText.innerHTML = imageDescription
+
+
+  const rating = document.createElement('div')
+  bottomContainer.appendChild(rating)
+  
+  rating.classList.add("rating")
+  const starRating = document.createElement('div')
+  rating.appendChild(starRating)
+  starRating.innerHTML  = starRatings
+  
+  const totalRating = document.createElement("span")
+  rating.appendChild(totalRating)
+  totalRating.innerHTML = `(${totalRatings})`
+  
+  
+  const pricelist = document.createElement('div')
+  bottomContainer.classList.add("total-pricelist")
+  bottomContainer.appendChild(pricelist)
+  
+  const price = document.createElement('span')
+  pricelist.appendChild(price)
+  price.innerHTML = symbols + Math.floor(payPrice)
+  const priceNotdiscount = document.createElement("span") 
+  pricelist.appendChild(priceNotdiscount)
+  priceNotdiscount.innerHTML = symbols + Math.floor(prices) 
+  const discount = document.createElement('span')
+  pricelist.appendChild(discount)
+  discount.innerHTML = `(${discounts}% off)`
+  const freeDelivery = document.createElement("span")
+  pricelist.appendChild(freeDelivery)
+  if(freeDeliverys == "yes"){
+    freeDelivery.innerHTML = "FREE delivery"
+  }  
+}  
+
+// popularGiftCardSingle()
+let svg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="18" height="18"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`+`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="18" height="18"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`+ `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="18" height="18"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`
+
+for(let key in popularGiftsNow){
+  popularGiftCardSingle(popularGiftsNow[key].imgURL,popularGiftsNow[key].caption,svg, popularGiftsNow[key].rating.amountOfRating, popularGiftsNow[key].amount.symbol, popularGiftsNow[key].amount.payPrice, popularGiftsNow[key].amount.originalPrice, popularGiftsNow[key].amount.discount, popularGiftsNow[key].freeDelivery)
+  
+}  
+
+
+
+// let x = forRatingStars()
+// let z = popularGiftsNow[key].rating.stars
+  
 const totalContainer = document.createElement("section");
 totalContainer.classList.add("total-card-holder");
 shopSelection.appendChild(totalContainer);
@@ -179,11 +349,10 @@ function singleCardOfShopSelection(imageUrl, caption) {
   card.appendChild(text);
 
   image.src = imageUrl;
-  console.log(caption);
+
   text.innerHTML = caption;
 }
 for (let key in selectionItems) {
-  console.log(selectionItems[key].caption);
   singleCardOfShopSelection(
     selectionItems[key].imageURl,
     selectionItems[key].caption
@@ -204,3 +373,5 @@ function dealOfTheDay() {
   image.src = "/assets/arrow.svg";
   bottomText.innerHTML = "Curated collections hand-picked by Etsy editors";
 }
+
+
