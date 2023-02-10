@@ -462,10 +462,156 @@ header - mobile
 .top-footer .help-center span{
   font-weight: bold;
 }
+.middle-footer .total-middle-footer{
+  padding: 18px 24px 0;
+  background-color: #d7e6f5 ;
+  padding-bottom: 36px;
+
+
+}
+.total-middle-footer p {
+  text-align: center;
+  font-family: fontnm;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 20px;
+  font-weight: 700;
+
+
+}
+.middle-footer .search-input{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+ border-radius: 96px;
+ border: none;
+  
+  
+}
+.middle-footer .search-input input{
+  width: 100%;
+  padding:9px 12px 9px 18px ;
+  background-color: transparent;
+  border: none;
+  
+  font-size: 16px;
+
+  line-height: 28px;
+
+  
+}
+.middle-footer .search-input span{
+  padding: 12px 21px 12px 15px;
+  height: 48px;
+  font-size: 16px;
+  font-family: fontnm;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle-footer-second .esty-aim svg{
+  width: 36px;
+  height: 36px;
+
+}
+.middle-footer-second .esty-aim {
+  font-family: fontnm;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-inline: 12px;
+}
+.middle-footer-second .esty-aim span{
+ color:white ;
+ text-decoration: underline;
+ text-decoration-style: dashed;
+ text-underline-position: under;
+
+}
+.middle-footer-second {
+  background-color:#4d6bc6 ;
+  padding: 12px 0;
+}
+.middle-footer-second .esty-aim{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-footer-third{
+  background-color:#2f466c ;
+  color: white;
+}
+.total-about{
+  padding: 12px 18px;
+  list-style: none;
+
+
+}
+.total-about ul{
+ list-style: none;
+ padding-inline: 6px ;
+}
+.total-about ul li{
+  font-family: fontnm;
+  font-size: 16px;
+  padding: 6px 0 12px;
+}
+ .total-about .main-drop-down{
+  display: flex;
+  width: 100%;
+  padding: 12px 0 ;
+  justify-content: space-between;
+
+ }
+ .total-about .main-drop-down span{
+  font-family: fontnm;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+ }
+ .download-app{
+  display: flex;
+  align-items: center;
+  border: white 2px solid;
+  width: fit-content;
+  padding: 5px 15px;
+  margin: 0 auto;
+  border-radius: 96px;
+
+  
+ }
+.download-app span{
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: fontnm;
+ }
+ .social-logos{
+   display: flex;
+   width: fit-content;
+   margin: auto;
+   margin-top: 18px;
+   gap: 18px;
+  }
+  .social-media-tab{
+    display: none;
+  }
+  .last-footer-places{
+    padding: 18px 24px;
+    background-color: #232347; 
+  }
+ 
+
+
 
 @media screen and (min-width: 507px) {
   .all-headings {
-    height: 33%;
+    height: 33%; 
   }
   .deals-of-day .image-cards li {
     width: 33%;
@@ -501,6 +647,56 @@ header - mobile
   .top-footer .total-container-top{
     padding: 36px 60px;
   }
+  .middle-footer .search-input{
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .total-middle-third-footer{
+    padding: 34px 24px 24px;
+   
+
+  }
+  .social-media-tab{
+    display: block;
+    margin-top: 25px;
+
+  }
+  .total-about .main-drop-down i{
+    display: none;
+  }
+  .total-about{
+    display: flex;
+
+    
+  }
+  .sub-items-four{
+    max-width: 25%;
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+
+  .sub-items-one{
+    max-width: 25%;
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  .sub-items-two{
+    max-width: 25%;
+    flex-basis: 25%;
+    flex-grow: 1;
+  }  .sub-items-three{
+    max-width: 25%;
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  .social-logos{
+    flex-wrap: wrap;
+  }
+  .social-medias{
+    display: none;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -727,7 +923,7 @@ header - mobile
   .all-headings {
     height: 15%;
   }
-
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -755,8 +951,20 @@ header - mobile
     max-width: 1400px;
     margin: auto;
   }
-  /* .shop-selection{
+  .total-about{
     max-width: 1400px;
     margin: auto;
-  } */
+  }
+  .total-about ul{
+    padding: 0;
+  }
+  .social-logos{
+    margin: 0;
+  }
+  .download-app{
+    margin: 0;
+    margin-bottom: 25px;
+
+  }
+ 
 }
