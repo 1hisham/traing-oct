@@ -254,7 +254,7 @@ function calculationDiscount() {
   }
 }
 calculationDiscount();
-
+console.log(calculationDiscount)
 // POPULAR-GIFT
 
 const headingOnPopularCard = document.createElement("h2");
