@@ -5,6 +5,9 @@ const dealsCard = document.querySelector(".image-cards");
 const shopSelection = document.querySelector(".shop-selection");
 const popularGift = document.querySelector(".popular-gift-cards");
 const sinlgeCard = document.querySelector(".single-card");
+const dropdown = document.querySelectorAll('.main-drop-down')
+const  hi = document.querySelectorAll('.hi')
+const icon = document.querySelectorAll('.icon')
 
 const categorylist = {
   sales: "Seller's Sales Hub",
@@ -395,6 +398,25 @@ function dealOfTheDay() {
   image.src = "/assets/arrow.svg";
   bottomText.innerHTML = "Curated collections hand-picked by Etsy editors";
 }
+
+
+
+function footerFaq(){
+
+dropdown.forEach((btn,i) =>{
+
+  btn.addEventListener("click", ()=>{
+
+  hi[i].classList.toggle('active')
+  icon[i].classList.toggle('rotate')
+  
+ 
+  
+  })
+})
+}
+footerFaq()
+
 
 
 
