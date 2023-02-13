@@ -13,7 +13,6 @@ let accumulator = 0;
 let stage = 0;
 let prv;
 
-
 // -------------------------
 // =========================
 //     INPUT BUTTON
@@ -24,7 +23,7 @@ number.forEach((num) => {
   num.addEventListener("click", () => {
     if(flagofcear === 0){   
       displayEl.innerHTML += num.innerHTML
-      console.log("helo");
+      console.log("hellllloo");
     }else{
       
       displayEl.innerHTML = ''
@@ -56,11 +55,18 @@ oprator.forEach((opr) => {
     if (stage === 0) {
       accumulator += stringToInt(displayEl.innerHTML);
       console.log(accumulator);
+      console.log('stageoooo');
       prv = opr.innerHTML;
 
       displayEl.innerHTML = "";
+      console.log(accumulator);
+      console.log(displayEl);
       stage = 1;
     } else {
+      if(accumulator == displayEl.innerHTML){
+      oprStore = opr.innerHTML;
+  
+      }else {
       switch (prv) {
         case "+":
           accumulator += stringToInt(displayEl.innerHTML);
@@ -85,6 +91,7 @@ oprator.forEach((opr) => {
           displayEl.innerHTML = accumulator;
           break;
       }
+    }
       prv = oprStore;
       flagofcear = 1
       storeDisplay = "";
@@ -93,9 +100,6 @@ oprator.forEach((opr) => {
 });
 displayEl.innerHTML += accumulator;
 displayEl.innerHTML = "";
-
-
-
 
 
 // -------------------------
@@ -138,8 +142,6 @@ function stringToInt(x) {
   return num;
 }
 
-
-
 // -------------------------
 // =========================
 //     EQUAL BUTTON
@@ -170,7 +172,7 @@ equal.addEventListener('click', () =>{
     displayEl.innerHTML = numb
     break;
   }
- 
+
   flagofcear = 1;
   oprStore = "";
   accumulator = 0;
