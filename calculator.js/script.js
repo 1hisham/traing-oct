@@ -109,6 +109,7 @@ displayEl.innerHTML = "";
 //  ------------------------
 
 function charToDigit(x) {
+ console.log(x,"negative");
   switch (x) {
     case "0":
       return 0;
@@ -141,6 +142,8 @@ function stringToInt(x) {
   }
   return num;
 }
+
+
 
 // -------------------------
 // =========================
@@ -188,7 +191,7 @@ equal.addEventListener('click', () =>{
 clearBtn.addEventListener('click', () => {
   displayEl.innerHTML = ''
    flagofcear = 0
-   oprStore = "";
+   oprStore = "";shift("Ke
    accumulator = 0;
    stage = 0;
 })

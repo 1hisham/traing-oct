@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: white;
+    display: flex;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+max-width: 350px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border-radius: 6px;
+background-color: rgb(70, 70, 70);
+padding-bottom:20px;
+margin: auto;
+}
+
+.container li{
+    list-style: none;
+    
+
+}
+.container button{
+    padding: 10px 25px;
+    margin: 5px;
+    min-width: 75px;
+    border: none;
+    border-radius: 4px;
+   background-color: rgb(207, 207, 207);
+
+
+}
+.container button:active{
+
+    transform: scale(0.90);
+    border: 1px solid rgb(201, 147, 0);
+}
+
+.container .operator{
+    background-color: #B9D7EA;
+}
+
+.container .clear{
+    background-color: #769FCD;
+    color: white;
+    font-weight: bold;
+}
+.container  .display{
+    border: 1px solid gray;
+    margin-top: 25px;
+    min-width: 340px;
+    padding: 12px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    height: 54px;
+    overflow-x: scroll;
+    
+    background-color: rgb(230, 236, 236);
+}
+
+.container  .display::-webkit-scrollbar{
+    display: none;
+}
+.container .equal{
+    background-color: #4686cf;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width:350px){
+  
+    .container .display{
+        min-width: 320px;
+    }
+    
+}
