@@ -635,6 +635,42 @@ header - mobile
 .rotate{
   transform: rotate(180deg);
 }
+.popular-gift-cards img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.popular-gift-cards .image-container{
+  position: relative;
+}
+.popular-gift-cards .heart-btn{
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.popular-gift-cards .heart-btn svg{
+  width: 24px;
+  height: 12px;
+  margin-top: 6px;
+
+}
+.popular-gift-cards .heart-btn{
+  display: none;
+}
+.popular-gift-cards .image-container:hover .heart-btn{
+  display: block;
+
+}
+
 
 
 
@@ -964,6 +1000,7 @@ header - mobile
   .all-headings {
     height: 15%;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
