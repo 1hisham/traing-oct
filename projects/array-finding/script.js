@@ -2,7 +2,7 @@
 
 // for search a spacfic number in Array
 
-let Array = [2,3,6,945,5,5,5,14546,1,2,3,3,4,7,8,7,8,6,52,5,8,4,2,7]
+let Array = [2,3,6,945,5,5,5]
 // let count = 0
 
 // function searchNumber(findingNumber){
