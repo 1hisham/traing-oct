@@ -44,3 +44,21 @@ const statics = maps.forEach((val,key) => {
     console.log(key ,str);
 })
 
+
+// for search a spacfic number in Array
+
+// let Array = [2,3,6,945,5,5,5]
+// let count = 0
+
+// function searchNumber(findingNumber){
+
+// for(let i = 0; i < Array.length ; i++){
+//     if(Array[i] === findingNumber){
+//         count++
+//     }
+// }
+// return count
+
+// }
+// console.log(searchNumber(2));
+
