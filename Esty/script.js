@@ -292,7 +292,7 @@ function popularGiftCardSingle(
   heartBtn.classList.add('heart-btn')
   imageContainer.appendChild(heartBtn)
   
-  heartBtn.innerHTML = heartFilled
+  heartBtn.innerHTML = heartEmpty
   
   heartBtn.addEventListener("click",()=>{
     if(heartBtn.innerHTML === heartEmpty){
