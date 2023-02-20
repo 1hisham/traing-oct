@@ -1042,4 +1042,15 @@ header - mobile
     margin: 0;
     margin-bottom: 25px;
   }
+  .popular-gift-cards .heart-btn svg{
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    margin-left: 3px;
+  }
+  .popular-gift-cards .heart-btn {
+    width: 30px;
+    height: 30px;
+
+  }
 }
