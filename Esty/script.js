@@ -185,7 +185,7 @@ function totalPopularGiftsNow() {
     },
   ];
   
-
+console.log(JSON.stringify(popularGiftsNow));
 
 
   //  DISCOUNT PRICE
@@ -359,49 +359,25 @@ function dealOfTheDay() {
 }
 
 function totalSelectionItems() {
-  function selectionItems() {
-    const selectionItems = [
-      {
-        imageURl: `https://i.etsystatic.com/22038449/r/il/23ab17/3432204051/il_340x270.3432204051_bu5x.jpg`,
-        caption: `The Festive Shop`,
-      },
-      {
-        imageURl: `https://i.etsystatic.com/30973456/c/1736/1379/267/1120/il/598a23/3655008446/il_340x270.3655008446_cp75.jpg`,
-        caption: `The Wedding Shope`,
-      },
-      {
-        imageURl: `https://i.etsystatic.com/17600118/c/1132/903/0/0/il/8b4129/2591412730/il_340x270.2591412730_abof.jpg`,
-        caption: `Fashion finds`,
-      },
-      {
-        imageURl: `https://i.etsystatic.com/32541884/r/il/a56807/3849973862/il_340x270.3849973862_p1w4.jpg`,
-        caption: `For your home`,
-      },
-      {
-        imageURl: `https://i.etsystatic.com/18899984/r/il/9dcc31/4228096205/il_340x270.4228096205_fueu.jpg`,
-        caption: `Everyday inspiration`,
-      },
-      {
-        imageURl: `https://i.etsystatic.com/21859925/r/il/1ee530/2623242698/il_340x270.2623242698_f0jd.jpg`,
-        caption: `The Etsy Gift Guide`,
-      },
-    ];
-    console.log(JSON.stringify(selectionItems));
 
     totalContainer.classList.add("total-card-holder");
     shopSelection.appendChild(totalContainer);
-    return selectionItems;
-  }
-  function itterationForSelectionItems() {
-    selectionItems = selectionItems();
-    for (let key in selectionItems) {
-      singleCardOfShopSelection(
-        selectionItems[key].imageURl,
-        selectionItems[key].caption
-      );
-    }
-  }
-  itterationForSelectionItems();
+   
+    fetch('https://raw.githubusercontent.com/1hisham/traing-oct/main/server/selectionItems.json')
+    .then((response) => response.json())
+    .then((selectionItems) => {
+
+      
+      function itterationForSelectionItems() {
+        for (let key in selectionItems) {
+          singleCardOfShopSelection(
+            selectionItems[key].imageURl,
+            selectionItems[key].caption
+            );
+          }
+        }
+        itterationForSelectionItems();
+      })
 }
 totalSelectionItems();
 
