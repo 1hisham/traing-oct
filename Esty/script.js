@@ -184,7 +184,7 @@ function totalPopularGiftsNow() {
       freeDelivery: "",
     },
   ];
-  console.log(JSON.stringify(popularGiftsNow));
+  
 
 
 
@@ -386,6 +386,7 @@ function totalSelectionItems() {
         caption: `The Etsy Gift Guide`,
       },
     ];
+    console.log(JSON.stringify(selectionItems));
 
     totalContainer.classList.add("total-card-holder");
     shopSelection.appendChild(totalContainer);
