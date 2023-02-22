@@ -49,7 +49,7 @@ totalCategorylist();
 function totalDiscoverList() {
 
     
-    fetch('https://raw.githubusercontent.com/1hisham/traing-oct/main/discoverlist.json')
+    fetch('https://raw.githubusercontent.com/1hisham/traing-oct/main/server/discoverlist.json')
         .then((response) => response.json())
         .then((discoverlist) => {
   
@@ -69,45 +69,14 @@ function totalDiscoverList() {
 totalDiscoverList();
 
 function totalDealOfDay() {
-  function imgaeCardsItems() {
-    const imgaeCardsItems = [
-      {
-        imglink: `https://i.etsystatic.com/22368382/r/il/006d21/4245808662/il_300x300.4245808662_a3x4.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Women's Ethnic Clothing`,
-      },
-      {
-        imglink: `https://i.etsystatic.com/32501528/c/1488/1488/0/0/il/23a5b4/3700725057/il_300x300.3700725057_szgj.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Women's Western clothing`,
-      },
-      {
-        imglink: `https://i.etsystatic.com/25566015/c/2003/2003/0/274/il/5b71e2/3196479462/il_300x300.3196479462_20xh.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Men's Clothing`,
-      },
-      {
-        imglink: `https://i.etsystatic.com/38026977/r/il/f2c1ad/4277525816/il_300x300.4277525816_f4wp.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Fashion Jewellwey`,
-      },
-      {
-        imglink: `https://i.etsystatic.com/32501528/c/1757/1757/247/180/il/67dc01/4248212322/il_300x300.4248212322_psvv.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Winter Clothing`,
-      },
-      {
-        imglink: `https://i.etsystatic.com/23528878/r/il/625e23/2589827894/il_300x300.2589827894_bi5a.jpg`,
-        discount: `Up to 40% off on`,
-        caption: `Wedding Clothing`,
-      },
-    ];
-    console.log(JSON.stringify(imgaeCardsItems));
-    return imgaeCardsItems;
-  }
+
+  fetch('https://raw.githubusercontent.com/1hisham/traing-oct/main/server/imageCardsItems.json')
+  .then((response) => response.json())
+  .then((imgaeCardsItems) => {
+  
+
   
   function deaOfDay() {
-    imgaeCardsItems = imgaeCardsItems();
 
     for (const key in imgaeCardsItems) {
       let inputImage = document.createElement("img");
@@ -129,6 +98,7 @@ function totalDealOfDay() {
   }
 
   deaOfDay();
+});
 }
 
 totalDealOfDay();
@@ -214,6 +184,7 @@ function totalPopularGiftsNow() {
       freeDelivery: "",
     },
   ];
+  console.log(JSON.stringify(popularGiftsNow));
 
 
 
