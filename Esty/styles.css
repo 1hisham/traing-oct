@@ -663,6 +663,9 @@ header - mobile
   margin-top: 6px;
 
 }
+.popular-gift-cards .full-card-filter{
+  display: none;
+}
 .popular-gift-cards .heart-btn{
   display: none;
 }
