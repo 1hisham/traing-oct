@@ -320,7 +320,7 @@ header - mobile
   display: flex;
   flex-direction: column;
   width: 50%;
-  flex-grow: 1;
+  
   padding: 6px;
 }
 .single-card {
