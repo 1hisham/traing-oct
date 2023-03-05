@@ -307,12 +307,17 @@ header - mobile
 .nav-bottom .container {
   display: none;
 }
-.popular-gift-cards h2 {
+.top-of-popular h2 {
   text-align: center;
   font-family: fontnm;
   font-size: 16px;
   color: #222;
   padding-top: 25px;
+  margin-left: 30px;
+}
+.top-of-popular{
+  max-width: 1460px;
+  margin: auto;
 }
 
 .popular-gift-cards .full-card {
@@ -342,6 +347,7 @@ header - mobile
   border-radius: 12px;
 }
 .bottom-container h2 {
+  font-family: fontnm;
   font-size: 13px;
   text-align: left;
   margin-bottom: 3px;
@@ -691,11 +697,12 @@ header - mobile
   .popular-gift-cards .full-card {
     width: 33%;
   }
-  .popular-gift-cards h2 {
+  .top-of-popular h2 {
     text-align: left;
     font-size: 28px;
     line-height: 36px;
     padding-left: 10px;
+    font-family: fontnm;
   }
   .popular-gift-cards {
     max-width: 1400px;
@@ -1055,5 +1062,8 @@ header - mobile
     width: 30px;
     height: 30px;
 
+  } 
+   .popular-gift-cards .full-card {
+    width: 20%;
   }
 }

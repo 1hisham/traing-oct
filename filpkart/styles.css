@@ -245,3 +245,31 @@ main .full-content-page{
 .total-top-items .sorting-on-top ul li{
     margin-inline: 8px;
 }
+
+
+
+.total-details-container {
+    padding:24px 0px 30px 24px;
+    display: flex;
+
+
+}
+
+.total-details-container .image-container img{
+    height: 200px;
+    width: 123px;
+    margin-inline: 38px;
+
+}
+.total-details-container .image-container{
+    position: relative;
+    width: fit-content;
+}
+.total-details-container .heart-svg-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sub-container-two .model-rating-section{
+    display: flex;
+}
