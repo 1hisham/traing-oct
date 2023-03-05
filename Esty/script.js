@@ -95,13 +95,10 @@ function calculationDiscount(products) {
   let discountPrice = 0;
   let price = 0;
   let priceArray = [];
-  console.log(products, "items");
   products.forEach((item) => {
     discountPrice = item.amount.originalPrice * (item.amount.discount / 100);
-    console.log(item.amount.originalPrice);
     price = Math.floor(item.amount.originalPrice - discountPrice);
     item.amount.payPrice = price;
-    console.log(price);
     priceArray.push(Math.floor(price));
   });
   return price;
@@ -145,8 +142,6 @@ function freeDeliveryAvaliability(key){
   )
     .then((response) => response.json())
     .then((popularGiftsNow) => {
-      console.log("popular", popularGiftsNow);
-
       calculationDiscount(popularGiftsNow);
 
       popularGiftCardSingle(popularGiftsNow)
@@ -186,9 +181,9 @@ function popularGiftCardSingle(items) {
     <span class="${freeDeliveryAvaliability(item.freeDelivery)}">${freeDeliveryAvaliability(item.freeDelivery)}</span>
     </div> 
     </li>
-    </div>`
-    console.log(item)
-    toatlSection += html
+    </div>
+    `
+     toatlSection += html
   })
  
   sinlgeCard.innerHTML = toatlSection
@@ -210,7 +205,6 @@ fetch(
     let html = ""
     let toatlSection = ""
     items.forEach((item) => {
-      console.log(item,'current');
       html =`
       <div>
         <img src="${item.imageURl}">
