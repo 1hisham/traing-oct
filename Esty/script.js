@@ -1,15 +1,16 @@
-"use strict";
+
+
+
+
 const category = document.querySelector(".category");
 const discoverItems = document.querySelector(".image-container");
 const dealsCard = document.querySelector(".image-cards");
-const topHeadingPopular = document.querySelector(".top-of-popular")
 const shopSelection = document.querySelector(".shop-selection");
-const popularGift = document.querySelector(".popular-gift-cards");
 const sinlgeCard = document.querySelector(".single-card");
 const dropdown = document.querySelectorAll(".main-drop-down");
-const toatlSection = document.querySelectorAll(".total-section");
+const toatlSections = document.querySelectorAll(".total-section");
 const icon = document.querySelectorAll(".icon");
-const totalContainer = document.createElement("section");
+const totalContainer = document.querySelector(".total-card-holder");
 const inputValue = document.querySelector(".toget-input");
 const buttonInput = document.querySelector(".input-button");
 const buttonClear = document.querySelector(".clear-button");
@@ -36,8 +37,8 @@ function categorylistItteration(items) {
 
     totalHtml += html;
   });
+  
   category.innerHTML = totalHtml;
-
 }
 
 // second section
@@ -48,7 +49,7 @@ function categorylistItteration(items) {
   )
     .then((response) => response.json())
     .then((discoverlist) => {
-      discoverListItteration(discoverlist);
+     discoverListItteration(discoverlist);
     });
 })();
 
@@ -151,11 +152,6 @@ function freeDeliveryAvaliability(key){
 
 // POPULAR-GIFT
 
-
-const headingOnPopularCard = document.createElement("h2");
-headingOnPopularCard.innerHTML = "Popular gifts right now";
-topHeadingPopular.appendChild(headingOnPopularCard);
-
 const fullCard = document.createElement("li");
 sinlgeCard.appendChild(fullCard);
 
@@ -187,7 +183,7 @@ function popularGiftCardSingle(items) {
   })
  
   sinlgeCard.innerHTML = toatlSection
-  popularGift.appendChild(sinlgeCard)
+
 
 }
 
@@ -199,6 +195,7 @@ fetch(
   .then((response) => response.json())
   .then((selectionItems) => {
     selectionItemsFn(selectionItems);
+
   });
   
   function selectionItemsFn(items) {
@@ -214,15 +211,14 @@ fetch(
    toatlSection += html
 
     })
-    shopSelection.appendChild(totalContainer);
-    totalContainer.classList.add("total-card-holder");
+   
     totalContainer.innerHTML = toatlSection
   }
-
+console.log(toatlSections);
 function footerFaq() {
   dropdown.forEach((btn, i) => {
     btn.addEventListener("click", () => {
-      toatlSection[i].classList.toggle("active");
+      toatlSections[i].classList.toggle("active");
       icon[i].classList.toggle("rotate");
     });
   });

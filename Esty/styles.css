@@ -336,6 +336,9 @@ header - mobile
 .popular-gift-cards {
   display: flex;
   flex-direction: column-reverse;
+
+  
+
 }
 .bottom-container h2 {
   display: -webkit-box;
