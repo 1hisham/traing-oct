@@ -1,7 +1,3 @@
-
-
-
-
 const category = document.querySelector(".category");
 const discoverItems = document.querySelector(".image-container");
 const dealsCard = document.querySelector(".image-cards");
@@ -14,7 +10,7 @@ const totalContainer = document.querySelector(".total-card-holder");
 const inputValue = document.querySelector(".toget-input");
 const buttonInput = document.querySelector(".input-button");
 const buttonClear = document.querySelector(".clear-button");
-
+let updated = 0;
 // data form sever
 
 (function () {
@@ -37,7 +33,7 @@ function categorylistItteration(items) {
 
     totalHtml += html;
   });
-  
+
   category.innerHTML = totalHtml;
 }
 
@@ -49,7 +45,7 @@ function categorylistItteration(items) {
   )
     .then((response) => response.json())
     .then((discoverlist) => {
-     discoverListItteration(discoverlist);
+      discoverListItteration(discoverlist);
     });
 })();
 
@@ -127,15 +123,13 @@ function starRatingAmount(key) {
 
 // FREE DELIVERY
 
-function freeDeliveryAvaliability(key){
+function freeDeliveryAvaliability(key) {
   if (key == "yes") {
     return "FREE delivery";
   } else {
-   return "no-delivery";
+    return "no-delivery";
   }
 }
-
-
 
 (function () {
   fetch(
@@ -144,23 +138,21 @@ function freeDeliveryAvaliability(key){
     .then((response) => response.json())
     .then((popularGiftsNow) => {
       calculationDiscount(popularGiftsNow);
-
-      popularGiftCardSingle(popularGiftsNow)
+      popularGiftCardSingle(popularGiftsNow);
+      filterWithPrice(popularGiftsNow);
     });
 })();
-
 
 // POPULAR-GIFT
 
 const fullCard = document.createElement("li");
 sinlgeCard.appendChild(fullCard);
 
-
 function popularGiftCardSingle(items) {
-  let html ="";
-  let toatlSection =""
-  items.forEach((item) =>{
+  let html = "";
+  let toatlSection = "";
 
+  items.forEach((item) => {
     html = `<div class="full-card"><div class="image-container">
     <img src="${item.imgURL}">
     <div class="heart-btn"><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z" fill="#222222"></path></svg>
@@ -169,25 +161,28 @@ function popularGiftCardSingle(items) {
     <li class="bottom-container total-pricelist">
     <h2>${item.caption}</h2>
     <div class="rating">
-    <div>${item.rating.amountOfRating}</div><span>${starRatingAmount(item.rating.stars)}</span></div>
+    <div>${item.rating.amountOfRating}</div><span>${starRatingAmount(
+      item.rating.stars
+    )}</span></div>
     <div class="all-prices">
     <span>₹ ${item.amount.payPrice} </span>
     <span>₹ ${item.amount.originalPrice}</span>
     <span>(${item.amount.discount}% off)</span>
-    <span class="${freeDeliveryAvaliability(item.freeDelivery)}">${freeDeliveryAvaliability(item.freeDelivery)}</span>
+    <span class="${freeDeliveryAvaliability(
+      item.freeDelivery
+    )}">${freeDeliveryAvaliability(item.freeDelivery)}</span>
     </div> 
     </li>
     </div>
-    `
-     toatlSection += html
-  })
- 
-  sinlgeCard.innerHTML = toatlSection
+    `;
+    toatlSection += html;
+  });
 
-
+  sinlgeCard.innerHTML = toatlSection;
 }
-
-
+function getClearFunction() {
+  sinlgeCard.innerHTML = "";
+}
 
 fetch(
   "https://raw.githubusercontent.com/1hisham/traing-oct/main/server/selectionItems.json"
@@ -195,25 +190,23 @@ fetch(
   .then((response) => response.json())
   .then((selectionItems) => {
     selectionItemsFn(selectionItems);
-
   });
-  
-  function selectionItemsFn(items) {
-    let html = ""
-    let toatlSection = ""
-    items.forEach((item) => {
-      html =`
+
+function selectionItemsFn(items) {
+  let html = "";
+  let toatlSection = "";
+  items.forEach((item) => {
+    html = `
       <div>
         <img src="${item.imageURl}">
         <span>${item.caption}</span>
       </div>
-   `
-   toatlSection += html
+   `;
+    toatlSection += html;
+  });
 
-    })
-   
-    totalContainer.innerHTML = toatlSection
-  }
+  totalContainer.innerHTML = toatlSection;
+}
 console.log(toatlSections);
 function footerFaq() {
   dropdown.forEach((btn, i) => {
@@ -225,3 +218,18 @@ function footerFaq() {
 }
 
 footerFaq();
+
+let selectedPrice = 0;
+function filterWithPrice(items) {
+  buttonInput.addEventListener("click", () => {
+    selectedPrice = inputValue.value;
+    array = items.filter((item) => {
+      console.log(item.amount.payPrice);
+      return item.amount.payPrice >= selectedPrice;
+    });
+    getClearFunction();
+    popularGiftCardSingle(array);
+  });
+  return array;
+}
+filterWithPrice();
