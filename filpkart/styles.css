@@ -39,6 +39,7 @@ header {
      position: sticky;
     top: 0;
     width: 100%;
+    z-index: 5;
     font-family: font;
 }
 .logo  img{
@@ -272,4 +273,58 @@ main .full-content-page{
 }
 .sub-container-two .model-rating-section{
     display: flex;
+    width: fit-content;
+    background-color: #388e3c;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px 2px;
+}
+.cost-and-discount .cost{
+    text-decoration: line-through;
+    color: #878787;
+    font-size: 14px;
+}
+.cost-and-discount .pay-price{
+    display: inline-block;
+    font-size: 25px;
+
+
+}
+.cost-and-discount .total-cost{
+    display: flex;
+    gap: 10px;
+}
+.cost-and-discount .discount{
+    color: #388e3c;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.total-details-container .one-and-two{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.total-details-container .sub-container-two{
+    width: 58%;
+}
+.check-items-brand{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+.check-items-brand label{
+    margin-left: 15px;
+}
+.check-items-rating{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+}
+.check-items-rating label{
+    margin-left: 15px;
 }
